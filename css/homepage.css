@@ -1,0 +1,48 @@
+.menu-mobile-body {
+  position: fixed;
+  left: -100%;
+  width: 75%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: white;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 1000;
+  overflow-y: scroll;
+}
+
+.menu-mobile-body--active {
+  left: 0 !important;
+}
+
+.icon-inner,
+.ionicon,
+svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-expended {
+  background-color: #FFF2F4;
+}
+
+.dropdown-menu {
+  animation-name: dropUp;
+  animation-duration: .3s;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+@keyframes dropUp {
+  0% {
+     top: 60px;
+     opacity: 0;
+  }
+  100% {
+      top: 20px;
+      opacity: 1;
+  }
+}
