@@ -62,3 +62,9 @@ const openLanguageDropdown_lg = () => {
     dropdown.style.display = "none";
   }
 }
+
+const closeAds = () => {
+  const ads = document.getElementById('ads');
+  ads.style.display = "none";
+  ads.style.zIndex = "-1";
+}
