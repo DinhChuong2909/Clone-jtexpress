@@ -12,80 +12,502 @@
       rel="stylesheet"
     />
 
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/homepage.css" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <title>J&T Express - Trang chủ</title>
   </head>
-  <body>
-    <header>
-      <div class="n4msama-nav transition-shadow shadow-lg">
-        <div class="bg-[#161D25] h-[32px] flex items-center">
-          <div
-            class="h-full flex items-center md:mx-auto text-[#FFFFFF] text-[12px] justify-between w-full md:container"
-          >
-            <span class="hidden sm:hidden md:block md:w-[180px]">
-              Copyright @J&T Express
-            </span>
+  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <header id="layout-header">
+      <header>
+        <div class="n4msama-nav transition-shadow shadow-lg">
+          <div class="bg-[#161D25] h-[32px] flex items-center">
             <div
-              class="h-full search_box w-full flex items-center justify-between sm:justify-between md:justify-end md:px-0 px-4"
+              class="h-full flex items-center md:mx-auto text-[#FFFFFF] text-[12px] justify-between w-full md:container"
             >
-              <div class="flex items-center gap-x-[15px]">
-                <span value_hashtag="#J&T Express" class="ml-3 cursor-pointer">
-                  #J&T Express
-                </span>
-                <span value_hashtag="#Promotion" class="ml-3 cursor-pointer">
-                  #Promotion
-                </span>
-              </div>
-
-              <form class="form-inline" method="GET" action="">
-                <div
-                  class="flex items-center rounded-[15px] border px-2 ml-4 h-[20px lg:w-auto"
-                >
-                  <button type="submit" class="flex">
-                    <svg
-                      width="12"
-                      height="12"
-                      class="DocSearch-Search-Icon"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
-                        stroke="currentColor"
-                        fill="none"
-                        fill-rule="evenodd"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </button>
-                  <input
-                    value=""
-                    class="form-control-navbar bg-transparent focus:outline-none ml-2 placeholder-white"
-                    placeholder="Search"
-                    type="text"
-                    name="search"
-                  />
+              <span class="hidden sm:hidden md:block md:w-[180px]">
+                Copyright @J&T Express
+              </span>
+              <div
+                class="h-full search_box w-full flex items-center justify-between sm:justify-between md:justify-end md:px-0 px-4"
+              >
+                <div class="flex items-center gap-x-[15px]">
+                  <span value_hashtag="#J&T Express" class="ml-3 cursor-pointer">
+                    #J&T Express
+                  </span>
+                  <span value_hashtag="#Promotion" class="ml-3 cursor-pointer">
+                    #Promotion
+                  </span>
                 </div>
-              </form>
-
-              <div class="ml-3 z-10 hidden lg:block">
-                <div class="relative hidden lg:block">
-                  <button
-                    class="relative flex items-center focus:outline-none"
-                    type="button"
-                    onclick="openLanguageDropdown_lg()"
+  
+                <form class="form-inline" method="GET" action="">
+                  <div
+                    class="flex items-center rounded-[15px] border px-2 ml-4 h-[20px lg:w-auto"
                   >
-                    <span class="mr-1 text-[16px] uppercase">vi</span>
+                    <button type="submit" class="flex">
+                      <svg
+                        width="12"
+                        height="12"
+                        class="DocSearch-Search-Icon"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                          stroke="currentColor"
+                          fill="none"
+                          fill-rule="evenodd"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </button>
+                    <input
+                      value=""
+                      class="form-control-navbar bg-transparent focus:outline-none ml-2 placeholder-white"
+                      placeholder="Search"
+                      type="text"
+                      name="search"
+                    />
+                  </div>
+                </form>
+  
+                <div class="ml-3 z-10 hidden lg:block">
+                  <div class="relative hidden lg:block">
+                    <button
+                      class="relative flex items-center focus:outline-none"
+                      type="button"
+                      onclick="openLanguageDropdown_lg()"
+                    >
+                      <span class="mr-1 text-[16px] uppercase">vi</span>
+                      <svg
+                        width="14"
+                        height="14"
+                        class="fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <div
+                      class="absolute right-0 bg-white rounded-md shadow-xl border"
+                      style="display: none"
+                      id="language-dropdown-lg"
+                    >
+                      <a
+                        class="uppercase block px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                        href="#"
+                      >
+                        en
+                      </a>
+                      <a
+                        class="uppercase block px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                        href="#"
+                      >
+                        vi
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <nav
+            class="px-4 lg:px-0 flex items-center justify-between mx-auto h-[65px] container"
+          >
+            <div class="menu-on-mobile lg:hidden w-[44px]">
+              <ion-icon
+                onclick="openMenu()"
+                class="block lg:hidden text-3xl md hydrated"
+                name="menu-outline"
+                role="img"
+                aria-label="menu outline"
+              >
+                <div class="icon-inner">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon s-ion-icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <title>Menu</title>
+                    <path
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M80 160h352M80 256h352M80 352h352"
+                      class="ionicon-fill-none ionicon-stroke-width"
+                    ></path>
+                  </svg>
+                </div>
+              </ion-icon>
+  
+              <div class="w-full">
+                <div class="menu-mobile-body z-20" id="menu-mobile">
+                  <div class="text-[13px] font-medium pt-5">
+                    <!-- Trang chủ -->
+                    <div class="px-4 py-3">
+                      <a
+                        href="#"
+                        target="_self"
+                        class="inline-flex items-center cursor-pointer"
+                      >
+                        Trang chủ
+                      </a>
+                    </div>
+                    <!-- Giới thiệu -->
+                    <div class="px-4 py-3" onclick="toggleBackground(this)">
+                      <div
+                        class="flex items-center justify-between"
+                        onclick="changeIconDropdown(this)"
+                      >
+                        Giới thiệu
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          role="img"
+                          class="md hydrated"
+                          aria-label="chevron forward outline"
+                        ></ion-icon>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Về chúng tôi
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Cam kết
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Tra cứu -->
+                    <div class="px-4 py-3" onclick="toggleBackground(this)">
+                      <div
+                        class="flex items-center justify-between"
+                        onclick="changeIconDropdown(this)"
+                      >
+                        Tra cứu
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          role="img"
+                          class="md hydrated"
+                          aria-label="chevron forward outline"
+                        ></ion-icon>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Cước vận chuyển
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Bưu cục gần đây
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Vận đơn
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Bảng giá
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Hàng từ chối vận chuyển
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Quy cách đóng gói hàng hoá
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Dịch vụ -->
+                    <div class="px-4 py-3" onclick="toggleBackground(this)">
+                      <div
+                        class="flex items-center justify-between"
+                        onclick="changeIconDropdown(this)"
+                      >
+                        Dịch vụ
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          role="img"
+                          class="md hydrated"
+                          aria-label="chevron forward outline"
+                        ></ion-icon>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a href="#" target="_self" class="flex flex-col">
+                            <span clas="mb-1">
+                              Dịch vụ Chuyển phát tiêu chuẩn
+                            </span>
+                            <span class="font-bold text-[#D60009] italic">
+                              J&T Express
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a href="#" target="_self" class="flex flex-col">
+                            <span clas="mb-1"> Dịch vụ nhanh </span>
+                            <span class="font-bold text-[#D60009] italic">
+                              J&T Fast
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a href="#" target="_self" class="flex flex-col">
+                            <span clas="mb-1"> Siêu dịch vụ giao hàng </span>
+                            <span class="font-bold text-[#D60009] italic">
+                              J&T Super
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a href="#" target="_self" class="flex flex-col">
+                            <span clas="mb-1"> Tuyến vận chuyển quốc tế </span>
+                            <span class="font-bold text-[#D60009] italic">
+                              J&T International
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a href="#" target="_self" class="flex flex-col">
+                            <span clas="mb-1"> Dịch vụ tươi sống </span>
+                            <span class="font-bold text-[#D60009] italic">
+                              J&T Fresh
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Tuyển dụng -->
+                    <div class="px-4 py-3" onclick="toggleBackground(this)">
+                      <div
+                        class="flex items-center justify-between"
+                        onclick="changeIconDropdown(this)"
+                      >
+                        Tuyển dụng
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          role="img"
+                          class="md hydrated"
+                          aria-label="chevron forward outline"
+                        ></ion-icon>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Cơ hội nghề nghiệp (tìm kiếm, ứng tuyển)
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Cuộc sống J&T Express
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Blog -->
+                    <div class="px-4 py-3" onclick="toggleBackground(this)">
+                      <div
+                        class="flex items-center justify-between"
+                        onclick="changeIconDropdown(this)"
+                      >
+                        Blog
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          role="img"
+                          class="md hydrated"
+                          aria-label="chevron forward outline"
+                        ></ion-icon>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            J-Magazine
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Tin tức nổi bật
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Tư vấn -->
+                    <div class="px-4 py-3" onclick="toggleBackground(this)">
+                      <div
+                        class="flex items-center justify-between"
+                        onclick="changeIconDropdown(this)"
+                      >
+                        Tư vấn
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          role="img"
+                          class="md hydrated"
+                          aria-label="chevron forward outline"
+                        ></ion-icon>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Liên hệ
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="#"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Đăng ký tư vấn
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-screen h-screen opacity-0 absolute top-0 left-0"
+                  style="display: none"
+                  id="menu-overlay"
+                  onclick="openMenu()"
+                ></div>
+              </div>
+            </div>
+  
+            <a onclick="window.location='./homepage.html'">
+              <img
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/logo.svg"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              />
+            </a>
+            <ul
+              class="hidden lg:flex desktop-nav items-center list-none text-[#5D6A7A] text-[14px] list-none"
+            >
+              <!-- Trang chủ -->
+              <li class="ml-5 flex items-center text-red-500">
+                <a
+                  class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer"
+                  href="#"
+                  target="_self"
+                >
+                  Trang chủ
+                </a>
+              </li>
+              <!-- Giới thiệu -->
+              <li class="dropdown ml-5 flex items-center">
+                <div class="dropdown inline-block relative">
+                  <a
+                    class="flex items-center transition-colors cursor-pointer"
+                    href="#"
+                    target="_self"
+                  >
+                    Giới thiệu
                     <svg
-                      width="14"
-                      height="14"
-                      class="fill-current"
+                      class="fill-current h-4 w-4"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                     >
@@ -93,791 +515,382 @@
                         d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
                       ></path>
                     </svg>
-                  </button>
-                  <div
-                    class="absolute right-0 bg-white rounded-md shadow-xl border"
-                    style="display: none"
-                    id="language-dropdown-lg"
+                  </a>
+  
+                  <ul
+                    class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
                   >
-                    <a
-                      class="uppercase block px-4 py-2 text-sm text-gray-700 cursor-pointer"
-                      href="#"
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        Về chúng tôi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        Cam kết
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Tra cứu -->
+              <li class="dropdown ml-5 flex items-center">
+                <div class="dropdown inline-block relative">
+                  <a
+                    class="flex items-center transition-colors cursor-pointer"
+                    href="#"
+                    target="_self"
+                  >
+                    Tra cứu
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
                     >
-                      en
-                    </a>
-                    <a
-                      class="uppercase block px-4 py-2 text-sm text-gray-700 cursor-pointer"
-                      href="#"
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      ></path>
+                    </svg>
+                  </a>
+  
+                  <ul
+                    class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
+                  >
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        Cước vận chuyển
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        Bưu cục gần đây
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        Vận đơn
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        Bảng giá
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        Hàng từ chối vận chuyển
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        Quý khách đóng gói hàng hoá
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Dịch vụ -->
+              <li class="dropdown ml-5 flex items-center">
+                <div class="dropdown inline-block relative">
+                  <a
+                    class="flex items-center transition-colors cursor-pointer"
+                    href="#"
+                    target="_self"
+                  >
+                    Dịch vụ
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
                     >
-                      vi
-                    </a>
-                  </div>
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      ></path>
+                    </svg>
+                  </a>
+  
+                  <ul
+                    class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
+                  >
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        <span> Dịch vụ chuyển phát tiêu chuẩn </span>
+                        <span class="font-bold italic text-[#D60009]">
+                          J&T Express
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        <span> Dịch vụ nhanh </span>
+                        <span class="font-bold italic text-[#D60009]">
+                          J&T Fast
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        <span> Siêu dịch vụ giao hàng </span>
+                        <span class="font-bold italic text-[#D60009]">
+                          J&T Supper
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        <span> Tuyến vận chuyển quốc tế </span>
+                        <span class="font-bold italic text-[#D60009]">
+                          J&T International
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        <span> Dịch vụ tươi sống </span>
+                        <span class="font-bold italic text-[#D60009]">
+                          J&T Fresh
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Tuyển dụng -->
+              <li class="dropdown ml-5 flex items-center">
+                <div class="dropdown inline-block relative">
+                  <a
+                    class="flex items-center transition-colors cursor-pointer"
+                    href="#"
+                    target="_self"
+                  >
+                    Tuyển dụng
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      ></path>
+                    </svg>
+                  </a>
+  
+                  <ul
+                    class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
+                  >
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        Cơ hội nghề nghiệp (tìm kiếm, ứng tuyển)
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        Cuộc sống J&T Express
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Blog -->
+              <li class="dropdown ml-5 flex items-center">
+                <div class="dropdown inline-block relative">
+                  <a
+                    class="flex items-center transition-colors cursor-pointer"
+                    href="#"
+                    target="_self"
+                  >
+                    Blog
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      ></path>
+                    </svg>
+                  </a>
+  
+                  <ul
+                    class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
+                  >
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        J-Magazine
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        Tin tức nổi bật
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Tư vấn -->
+              <li class="dropdown ml-5 flex items-center">
+                <div class="dropdown inline-block relative">
+                  <a
+                    class="flex items-center transition-colors cursor-pointer"
+                    href="#"
+                    target="_self"
+                  >
+                    Tư vấn
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      ></path>
+                    </svg>
+                  </a>
+  
+                  <ul
+                    class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
+                  >
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        Liên hệ
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="#"
+                        target="_self"
+                      >
+                        Đăng ký tư vấn
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="lg:hidden block">
+              <div class="relative my-32">
+                <button
+                  class="relative flex items-center focus:outline-none"
+                  onclick="openLanguageDropdown()"
+                >
+                  <span class="mr-1 text-[16px] uppercase">vi</span>
+                  <ion-icon
+                    name="chevron-down-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="chevron down outline"
+                  ></ion-icon>
+                </button>
+                <div
+                  class="fixed inset-0 h-full w-full z-10"
+                  style="display: none"
+                  id="language-overlay"
+                  onclick="openLanguageDropdown()"
+                ></div>
+                <div
+                  class="absolute right-0 bg-white rounded-md shadow-xl z-20 border"
+                  style="display: none"
+                  id="language-dropdown"
+                >
+                  <a
+                    class="block uppercase px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                    href="#"
+                  >
+                    en
+                  </a>
+                  <a
+                    class="block uppercase px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                    href="#"
+                  >
+                    vi
+                  </a>
                 </div>
               </div>
             </div>
-          </div>
+          </nav>
         </div>
-
-        <nav
-          class="px-4 lg:px-0 flex items-center justify-between mx-auto h-[65px] container"
-        >
-          <div class="menu-on-mobile lg:hidden w-[44px]">
-            <ion-icon
-              onclick="openMenu()"
-              class="block lg:hidden text-3xl md hydrated"
-              name="menu-outline"
-              role="img"
-              aria-label="menu outline"
-            >
-              <div class="icon-inner">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="ionicon s-ion-icon"
-                  viewBox="0 0 512 512"
-                >
-                  <title>Menu</title>
-                  <path
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
-                    d="M80 160h352M80 256h352M80 352h352"
-                    class="ionicon-fill-none ionicon-stroke-width"
-                  ></path>
-                </svg>
-              </div>
-            </ion-icon>
-
-            <div class="w-full">
-              <div class="menu-mobile-body z-20" id="menu-mobile">
-                <div class="text-[13px] font-medium pt-5">
-                  <!-- Trang chủ -->
-                  <div class="px-4 py-3">
-                    <a
-                      href="#"
-                      target="_self"
-                      class="inline-flex items-center cursor-pointer"
-                    >
-                      Trang chủ
-                    </a>
-                  </div>
-                  <!-- Giới thiệu -->
-                  <div class="px-4 py-3" onclick="toggleBackground(this)">
-                    <div
-                      class="flex items-center justify-between"
-                      onclick="changeIconDropdown(this)"
-                    >
-                      Giới thiệu
-                      <ion-icon
-                        name="chevron-forward-outline"
-                        role="img"
-                        class="md hydrated"
-                        aria-label="chevron forward outline"
-                      ></ion-icon>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          Về chúng tôi
-                        </a>
-                      </div>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          Cam kết
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Tra cứu -->
-                  <div class="px-4 py-3" onclick="toggleBackground(this)">
-                    <div
-                      class="flex items-center justify-between"
-                      onclick="changeIconDropdown(this)"
-                    >
-                      Tra cứu
-                      <ion-icon
-                        name="chevron-forward-outline"
-                        role="img"
-                        class="md hydrated"
-                        aria-label="chevron forward outline"
-                      ></ion-icon>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          Cước vận chuyển
-                        </a>
-                      </div>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          Bưu cục gần đây
-                        </a>
-                      </div>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          Vận đơn
-                        </a>
-                      </div>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          Bảng giá
-                        </a>
-                      </div>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          Hàng từ chối vận chuyển
-                        </a>
-                      </div>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          Quy cách đóng gói hàng hoá
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Dịch vụ -->
-                  <div class="px-4 py-3" onclick="toggleBackground(this)">
-                    <div
-                      class="flex items-center justify-between"
-                      onclick="changeIconDropdown(this)"
-                    >
-                      Dịch vụ
-                      <ion-icon
-                        name="chevron-forward-outline"
-                        role="img"
-                        class="md hydrated"
-                        aria-label="chevron forward outline"
-                      ></ion-icon>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a href="#" target="_self" class="flex flex-col">
-                          <span clas="mb-1">
-                            Dịch vụ Chuyển phát tiêu chuẩn
-                          </span>
-                          <span class="font-bold text-[#D60009] italic">
-                            J&T Express
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a href="#" target="_self" class="flex flex-col">
-                          <span clas="mb-1"> Dịch vụ nhanh </span>
-                          <span class="font-bold text-[#D60009] italic">
-                            J&T Fast
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a href="#" target="_self" class="flex flex-col">
-                          <span clas="mb-1"> Siêu dịch vụ giao hàng </span>
-                          <span class="font-bold text-[#D60009] italic">
-                            J&T Super
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a href="#" target="_self" class="flex flex-col">
-                          <span clas="mb-1"> Tuyến vận chuyển quốc tế </span>
-                          <span class="font-bold text-[#D60009] italic">
-                            J&T International
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a href="#" target="_self" class="flex flex-col">
-                          <span clas="mb-1"> Dịch vụ tươi sống </span>
-                          <span class="font-bold text-[#D60009] italic">
-                            J&T Fresh
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Tuyển dụng -->
-                  <div class="px-4 py-3" onclick="toggleBackground(this)">
-                    <div
-                      class="flex items-center justify-between"
-                      onclick="changeIconDropdown(this)"
-                    >
-                      Tuyển dụng
-                      <ion-icon
-                        name="chevron-forward-outline"
-                        role="img"
-                        class="md hydrated"
-                        aria-label="chevron forward outline"
-                      ></ion-icon>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          Cơ hội nghề nghiệp (tìm kiếm, ứng tuyển)
-                        </a>
-                      </div>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          Cuộc sống J&T Express
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Blog -->
-                  <div class="px-4 py-3" onclick="toggleBackground(this)">
-                    <div
-                      class="flex items-center justify-between"
-                      onclick="changeIconDropdown(this)"
-                    >
-                      Blog
-                      <ion-icon
-                        name="chevron-forward-outline"
-                        role="img"
-                        class="md hydrated"
-                        aria-label="chevron forward outline"
-                      ></ion-icon>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          J-Magazine
-                        </a>
-                      </div>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          Tin tức nổi bật
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Tư vấn -->
-                  <div class="px-4 py-3" onclick="toggleBackground(this)">
-                    <div
-                      class="flex items-center justify-between"
-                      onclick="changeIconDropdown(this)"
-                    >
-                      Tư vấn
-                      <ion-icon
-                        name="chevron-forward-outline"
-                        role="img"
-                        class="md hydrated"
-                        aria-label="chevron forward outline"
-                      ></ion-icon>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          Liên hệ
-                        </a>
-                      </div>
-                    </div>
-                    <div id="dropdown" style="display: none">
-                      <div class="py-3 pl-2 border-t border-[#FFE3E7]">
-                        <a
-                          href="#"
-                          target="_self"
-                          class="inline-flex items-center cursor-pointer"
-                        >
-                          Đăng ký tư vấn
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="w-screen h-screen opacity-0 absolute top-0 left-0"
-                style="display: none"
-                id="menu-overlay"
-                onclick="openMenu()"
-              ></div>
-            </div>
-          </div>
-
-          <a onclick="window.location='./homepage.html'">
-            <img
-              src="https://jtexpress.vn/themes/jtexpress/assets/images/logo.svg"
-              alt="J&T Express - Giao hàng Chuyển phát nhanh"
-            />
-          </a>
-          <ul
-            class="hidden lg:flex desktop-nav items-center list-none text-[#5D6A7A] text-[14px] list-none"
-          >
-            <!-- Trang chủ -->
-            <li class="ml-5 flex items-center text-red-500">
-              <a
-                class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer"
-                href="#"
-                target="_self"
-              >
-                Trang chủ
-              </a>
-            </li>
-            <!-- Giới thiệu -->
-            <li class="dropdown ml-5 flex items-center">
-              <div class="dropdown inline-block relative">
-                <a
-                  class="flex items-center transition-colors cursor-pointer"
-                  href="#"
-                  target="_self"
-                >
-                  Giới thiệu
-                  <svg
-                    class="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    ></path>
-                  </svg>
-                </a>
-
-                <ul
-                  class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
-                >
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      Về chúng tôi
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      Cam kết
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <!-- Tra cứu -->
-            <li class="dropdown ml-5 flex items-center">
-              <div class="dropdown inline-block relative">
-                <a
-                  class="flex items-center transition-colors cursor-pointer"
-                  href="#"
-                  target="_self"
-                >
-                  Tra cứu
-                  <svg
-                    class="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    ></path>
-                  </svg>
-                </a>
-
-                <ul
-                  class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
-                >
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      Cước vận chuyển
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      Bưu cục gần đây
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      Vận đơn
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      Bảng giá
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      Hàng từ chối vận chuyển
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      Quý khách đóng gói hàng hoá
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <!-- Dịch vụ -->
-            <li class="dropdown ml-5 flex items-center">
-              <div class="dropdown inline-block relative">
-                <a
-                  class="flex items-center transition-colors cursor-pointer"
-                  href="#"
-                  target="_self"
-                >
-                  Dịch vụ
-                  <svg
-                    class="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    ></path>
-                  </svg>
-                </a>
-
-                <ul
-                  class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
-                >
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      <span> Dịch vụ chuyển phát tiêu chuẩn </span>
-                      <span class="font-bold italic text-[#D60009]">
-                        J&T Express
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      <span> Dịch vụ nhanh </span>
-                      <span class="font-bold italic text-[#D60009]">
-                        J&T Fast
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      <span> Siêu dịch vụ giao hàng </span>
-                      <span class="font-bold italic text-[#D60009]">
-                        J&T Supper
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      <span> Tuyến vận chuyển quốc tế </span>
-                      <span class="font-bold italic text-[#D60009]">
-                        J&T International
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      <span> Dịch vụ tươi sống </span>
-                      <span class="font-bold italic text-[#D60009]">
-                        J&T Fresh
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <!-- Tuyển dụng -->
-            <li class="dropdown ml-5 flex items-center">
-              <div class="dropdown inline-block relative">
-                <a
-                  class="flex items-center transition-colors cursor-pointer"
-                  href="#"
-                  target="_self"
-                >
-                  Tuyển dụng
-                  <svg
-                    class="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    ></path>
-                  </svg>
-                </a>
-
-                <ul
-                  class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
-                >
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      Cơ hội nghề nghiệp (tìm kiếm, ứng tuyển)
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      Cuộc sống J&T Express
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <!-- Blog -->
-            <li class="dropdown ml-5 flex items-center">
-              <div class="dropdown inline-block relative">
-                <a
-                  class="flex items-center transition-colors cursor-pointer"
-                  href="#"
-                  target="_self"
-                >
-                  Blog
-                  <svg
-                    class="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    ></path>
-                  </svg>
-                </a>
-
-                <ul
-                  class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
-                >
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      J-Magazine
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      Tin tức nổi bật
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <!-- Tư vấn -->
-            <li class="dropdown ml-5 flex items-center">
-              <div class="dropdown inline-block relative">
-                <a
-                  class="flex items-center transition-colors cursor-pointer"
-                  href="#"
-                  target="_self"
-                >
-                  Tư vấn
-                  <svg
-                    class="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    ></path>
-                  </svg>
-                </a>
-
-                <ul
-                  class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
-                >
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      Liên hệ
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
-                      href="#"
-                      target="_self"
-                    >
-                      Đăng ký tư vấn
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <div class="lg:hidden block">
-            <div class="relative my-32">
-              <button
-                class="relative flex items-center focus:outline-none"
-                onclick="openLanguageDropdown()"
-              >
-                <span class="mr-1 text-[16px] uppercase">vi</span>
-                <ion-icon
-                  name="chevron-down-outline"
-                  role="img"
-                  class="md hydrated"
-                  aria-label="chevron down outline"
-                ></ion-icon>
-              </button>
-              <div
-                class="fixed inset-0 h-full w-full z-10"
-                style="display: none"
-                id="language-overlay"
-                onclick="openLanguageDropdown()"
-              ></div>
-              <div
-                class="absolute right-0 bg-white rounded-md shadow-xl z-20 border"
-                style="display: none"
-                id="language-dropdown"
-              >
-                <a
-                  class="block uppercase px-4 py-2 text-sm text-gray-700 cursor-pointer"
-                  href="#"
-                >
-                  en
-                </a>
-                <a
-                  class="block uppercase px-4 py-2 text-sm text-gray-700 cursor-pointer"
-                  href="#"
-                >
-                  vi
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
+      </header>
     </header>
 
-    <div
+    <!-- Onclick here to hide the Ads -->
+    <!-- Add animation fadein-out  -->
+    <!-- <div
       class="w-full h-full fixed inset-0 z-[100] bg-black bg-opacity-50 overflow-y-auto flex items-center justify-center"
       id="ads"
     >
-    <!-- Onclick here to hide the Ads -->
-    <!-- Add animation fadein-out  -->
       <div class="z-20" onclick="">
         <div class="w-auto mx-auto relative">
           <button
@@ -903,9 +916,1744 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+    <section>
+      <!-- Slider -->
+      <div class="hidden sm:block">
+        <div class="my-slider w-full h-[514px] lg:h-[700px] overflow-hidden">
+          <div class="my-slider-item block h-full overflow-hidden">
+            <a target="_blank" href="#">
+              <img
+                class="w-full h-full object-cover relative"
+                src="https://jtexpress.vn/storage/app/uploads/public/651/a3c/697/651a3c6970630631542328.jpg"
+                alt="&T Express - Giao hàng Chuyển phát nhanh"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="200"
+                data-aos-offset="0"
+              />
+            </a>
+          </div>
+          <div class="my-slider-item block h-full overflow-hidden">
+            <a target="_blank" href="#">
+              <img
+                class="w-full h-full object-cover relative"
+                src="https://jtexpress.vn/storage/app/uploads/public/629/5ed/e5b/6295ede5b2956262118810.jpg"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="200"
+                data-aos-offset="0"
+              />
+            </a>
+          </div>
+          <div class="my-slider-item block h-full overflow-hidden">
+            <a target="_blank" href="#">
+              <img
+                class="w-full h-full object-cover relative"
+                src="https://jtexpress.vn/storage/app/uploads/public/64a/f53/3ac/64af533acb819699579023.jpg"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="200"
+                data-aos-offset="0"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="block sm:hidden">
+        <div class="my-slider w-full h-[514px] lg:h-[700px] overflow-hidden">
+          <div class="my-slider-item block h-full overflow-hidden">
+            <a target="_blank" target="_blank" href="#">
+              <img
+                class="w-full h-full object-cover relative"
+                src="https://jtexpress.vn/storage/app/uploads/public/651/a3c/652/651a3c6529523966269970.jpg"
+                alt="&T Express - Giao hàng Chuyển phát nhanh"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="200"
+                data-aos-offset="0"
+              />
+            </a>
+          </div>
+          <div class="my-slider-item block h-full overflow-hidden">
+            <a target="_blank" href="#">
+              <img
+                class="w-full h-full object-cover relative"
+                src="https://jtexpress.vn/storage/app/uploads/public/628/d9d/5fe/628d9d5fee073180445559.jpg"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="200"
+                data-aos-offset="0"
+              />
+            </a>
+          </div>
+          <div class="my-slider-item block h-full overflow-hidden">
+            <a target="_blank" href="#">
+              <img
+                class="w-full h-full object-cover relative"
+                src="https://jtexpress.vn/storage/app/uploads/public/64a/f53/3ec/64af533ec86b7041663758.jpg"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="200"
+                data-aos-offset="0"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <div class="md:h-auto mx-4 lg:mx-auto lg:container pb-10">
+        <div class="flex gap-x-[5px] h-full">
+          <span
+            class="px-2 lg:px-8 py-2 lg:py-4 bg-[#FAF3F4] text-[#5D6A7A] text-[16px] cursor-pointer tab currentIndex"
+            onclick="changeTab(0)"
+            >Tra cứu đơn hàng</span
+          >
+          <span
+            class="px-2 lg:px-8 py-2 lg:py-4 bg-[#FAF3F4] text-[#5D6A7A] text-[16px] tab cursor-pointer"
+            onclick="changeTab(1)"
+            >Tra cứu bưu cục</span
+          >
+          <span
+            class="px-2 lg:px-8 py-2 lg:py-4 bg-[#FAF3F4] text-[#5D6A7A] text-[16px] cursor-pointer tab"
+            onclick="location='#'"
+            >Bảng giá</span
+          >
+        </div>
+        <div
+          class="w-full py-4 px-4 mx-auto"
+          style="
+            box-shadow: 0px 4px 35.52px rgba(0, 0, 0, 0.25);
+            border-radius: 0px 0px 20px 20px;
+          "
+        >
+          <div class="tab-index tab-active">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+              <div
+                class="flex items-center border border-[#b2b2b2] px-2 w-full lg:mr-4"
+              >
+                <ion-icon
+                  class="text-xl md hydrated"
+                  name="search-outline"
+                  role="img"
+                  aria-label="search outline"
+                ></ion-icon>
+                <input
+                  class="w-full bg-transparent h-[43px] ml-2 focus:outline-none"
+                  placeholder="Nhập mã vận đơn của bạn (cách nhau bởi dấu phẩy), tối đa 10 vận đơn."
+                />
+              </div>
+              <span class="text-[12px] block lg:hidden">
+                Nhập mã vận đơn của bạn (cách nhau bởi dấu phẩy), tối đa 10 vận
+                đơn.
+              </span>
+              <div
+                class="flex flex-row items-center w-full lg:w-[180px] mt-5 lg:mt-0"
+              >
+                <button
+                  class="w-full lg:w-[180px] mr-0 lg:mr-2 bg-[#FF0000] h-[45px] rounded-[2px] text-white"
+                >
+                  Tìm kiếm
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-index">
+            <div>
+              <div
+                class="flex items-center justify-center flex-col w-full gap-[12px] lg:flex-row overflow-hidden h-full"
+              >
+                <div
+                  class="w-full common-shadow-input h-[43px] select2-stupid-at-home"
+                >
+                  <select
+                    id="office-province"
+                    name="province_id"
+                    class="search-select w-full h-full select2-hidden-accessible"
+                    tabindex="-1"
+                    aria-hidden="true"
+                  >
+                    <option class="text-[#161D25]" value="">
+                      Tỉnh/ Thành phố
+                    </option>
+                    <option class="text-[#161D25]" value="1">
+                      Tỉnh Quảng Ninh
+                    </option>
+                    <option class="text-[#161D25]" value="2">
+                      Tỉnh Bắc Giang
+                    </option>
+                    <option class="text-[#161D25]" value="3">
+                      Tỉnh Lạng Sơn
+                    </option>
+                    <option class="text-[#161D25]" value="4">
+                      Tỉnh Cao Bằng
+                    </option>
+                    <option class="text-[#161D25]" value="5">
+                      Tỉnh Tuyên Quang
+                    </option>
+                    <option class="text-[#161D25]" value="6">
+                      Tỉnh Thái Nguyên
+                    </option>
+                    <option class="text-[#161D25]" value="7">
+                      Tỉnh Bắc Kạn
+                    </option>
+                    <option class="text-[#161D25]" value="8">
+                      Tỉnh Phú Thọ
+                    </option>
+                    <option class="text-[#161D25]" value="9">
+                      Tỉnh Vĩnh Phúc
+                    </option>
+                    <option class="text-[#161D25]" value="10">
+                      Tỉnh Sơn La
+                    </option>
+                    <option class="text-[#161D25]" value="11">
+                      Tỉnh Lai Châu
+                    </option>
+                    <option class="text-[#161D25]" value="12">
+                      Tỉnh Lào Cai
+                    </option>
+                    <option class="text-[#161D25]" value="13">
+                      Tỉnh Điện Biên
+                    </option>
+                    <option class="text-[#161D25]" value="14">
+                      Tỉnh Yên Bái
+                    </option>
+                    <option class="text-[#161D25]" value="15">
+                      Tỉnh Hòa Bình
+                    </option>
+                    <option class="text-[#161D25]" value="16">
+                      Tỉnh Hà Giang
+                    </option>
+                    <option class="text-[#161D25]" value="17">
+                      Tỉnh Hải Dương
+                    </option>
+                    <option class="text-[#161D25]" value="18">
+                      Tỉnh Hưng Yên
+                    </option>
+                    <option class="text-[#161D25]" value="19">
+                      Tỉnh Bắc Ninh
+                    </option>
+                    <option class="text-[#161D25]" value="20">
+                      Thành phố Hải Phòng
+                    </option>
+                    <option class="text-[#161D25]" value="21">
+                      Tỉnh Hà Nam
+                    </option>
+                    <option class="text-[#161D25]" value="22">
+                      Tỉnh Thái Bình
+                    </option>
+                    <option class="text-[#161D25]" value="23">
+                      Tỉnh Nam Định
+                    </option>
+                    <option class="text-[#161D25]" value="24">
+                      Tỉnh Ninh Bình
+                    </option>
+                    <option class="text-[#161D25]" value="25">
+                      Tỉnh Quảng Bình
+                    </option>
+                    <option class="text-[#161D25]" value="26">
+                      Tỉnh Quảng Trị
+                    </option>
+                    <option class="text-[#161D25]" value="27">
+                      Thừa Thiên – Huế
+                    </option>
+                    <option class="text-[#161D25]" value="28">
+                      Tỉnh Quảng Nam
+                    </option>
+                    <option class="text-[#161D25]" value="29">
+                      Thành phố Đà Nẵng
+                    </option>
+                    <option class="text-[#161D25]" value="30">
+                      Tỉnh Thanh Hóa
+                    </option>
+                    <option class="text-[#161D25]" value="31">
+                      Tỉnh Nghệ An
+                    </option>
+                    <option class="text-[#161D25]" value="32">
+                      Tỉnh Hà Tĩnh
+                    </option>
+                    <option class="text-[#161D25]" value="33">
+                      Tỉnh Đồng Nai
+                    </option>
+                    <option class="text-[#161D25]" value="34">
+                      Tỉnh Bình Thuận
+                    </option>
+                    <option class="text-[#161D25]" value="35">
+                      Tỉnh Bà Rịa - Vũng Tàu
+                    </option>
+                    <option class="text-[#161D25]" value="36">
+                      Tỉnh Quảng Ngãi
+                    </option>
+                    <option class="text-[#161D25]" value="37">
+                      Tỉnh Bình Định
+                    </option>
+                    <option class="text-[#161D25]" value="38">
+                      Tỉnh Phú Yên
+                    </option>
+                    <option class="text-[#161D25]" value="39">
+                      Tỉnh Khánh Hòa
+                    </option>
+                    <option class="text-[#161D25]" value="40">
+                      Tỉnh Ninh Thuận
+                    </option>
+                    <option class="text-[#161D25]" value="41">
+                      Tỉnh Kon Tum
+                    </option>
+                    <option class="text-[#161D25]" value="42">
+                      Tỉnh Đắk Nông
+                    </option>
+                    <option class="text-[#161D25]" value="43">
+                      Tỉnh Đắk Lắk
+                    </option>
+                    <option class="text-[#161D25]" value="44">
+                      Tỉnh Lâm Đồng
+                    </option>
+                    <option class="text-[#161D25]" value="45">
+                      Tỉnh Gia Lai
+                    </option>
+                    <option class="text-[#161D25]" value="46">
+                      Tỉnh Vĩnh Long
+                    </option>
+                    <option class="text-[#161D25]" value="47">
+                      Tỉnh Bình Phước
+                    </option>
+                    <option class="text-[#161D25]" value="48">
+                      Tỉnh Long An
+                    </option>
+                    <option class="text-[#161D25]" value="49">
+                      Tỉnh Tiền Giang
+                    </option>
+                    <option class="text-[#161D25]" value="50">
+                      Tỉnh Bình Dương
+                    </option>
+                    <option class="text-[#161D25]" value="51">
+                      Tỉnh Bến Tre
+                    </option>
+                    <option class="text-[#161D25]" value="52">
+                      Tỉnh Tây Ninh
+                    </option>
+                    <option class="text-[#161D25]" value="53">
+                      Tỉnh Đồng Tháp
+                    </option>
+                    <option class="text-[#161D25]" value="54">
+                      Tỉnh Cà Mau
+                    </option>
+                    <option class="text-[#161D25]" value="55">
+                      Tỉnh Bạc Liêu
+                    </option>
+                    <option class="text-[#161D25]" value="56">
+                      Thành phố Cần Thơ
+                    </option>
+                    <option class="text-[#161D25]" value="57">
+                      Tỉnh Hậu Giang
+                    </option>
+                    <option class="text-[#161D25]" value="58">
+                      Tỉnh Trà Vinh
+                    </option>
+                    <option class="text-[#161D25]" value="59">
+                      Tỉnh An Giang
+                    </option>
+                    <option class="text-[#161D25]" value="60">
+                      Tỉnh Kiên Giang
+                    </option>
+                    <option class="text-[#161D25]" value="61">
+                      Tỉnh Sóc Trăng
+                    </option>
+                    <option class="text-[#161D25]" value="62">
+                      Thành phố Hà Nội
+                    </option>
+                    <option class="text-[#161D25]" value="63">
+                      Thành phố Hồ Chí Minh
+                    </option></select
+                  ><span
+                    class="select2 select2-container select2-container--material select2-container--focus select2-container--below"
+                    dir="ltr"
+                    style="width: auto"
+                    ><span class="selection"
+                      ><span
+                        class="select2-selection select2-selection--single"
+                        role="combobox"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        tabindex="0"
+                        aria-disabled="false"
+                        aria-labelledby="select2-office-province-container"
+                        aria-controls="select2-office-province-container"
+                        ><span
+                          class="select2-selection__rendered"
+                          id="select2-office-province-container"
+                          role="textbox"
+                          aria-readonly="true"
+                          title="Tỉnh/ Thành phố"
+                          >Tỉnh/ Thành phố</span
+                        ><span
+                          class="select2-selection__arrow"
+                          role="presentation"
+                          ><b role="presentation"></b></span></span></span
+                    ><span class="dropdown-wrapper" aria-hidden="true"></span
+                  ></span>
+                </div>
+
+                <div
+                  class="common-shadow-input w-full h-[43px] select2-stupid-at-hom"
+                >
+                  <select
+                    id="slDistrict"
+                    name="district_id"
+                    class="search-select w-full h-full select2-hidden-accessible"
+                    tabindex="-1"
+                    aria-hidden="truect"
+                  >
+                    <option>Quận/huyện</option></select
+                  ><span
+                    class="select2 select2-container select2-container--material select2-container--below"
+                    dir="ltr"
+                    style="width: auto"
+                    ><span class="selection"
+                      ><span
+                        class="select2-selection select2-selection--single"
+                        role="combobox"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        tabindex="0"
+                        aria-disabled="false"
+                        aria-labelledby="select2-slDistrict-container"
+                        aria-controls="select2-slDistrict-container"
+                      >
+                        <span
+                          class="select2-selection__arrow"
+                          role="presentation"
+                          ><b role="presentation"></b></span></span></span
+                    ><span class="dropdown-wrapper" aria-hidden="true"></span
+                  ></span>
+                </div>
+
+                <div class="flex items-center w-full lg:w-[180px]">
+                  <button
+                    class="w-full lg:w-[180px] mr-0 lg:mr-2 bg-[#FF0000] text-[16px] h-[45px] rounded-[2px] text-white"
+                  >
+                    Tìm kiếm
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Countries -->
+      <div class="container mx-auto px-4 flex flex-col items-center">
+        <span
+          class="font-bold uppercase lg:text-[24px] mb-[12px] lg:mb-2 text-[20px]"
+        >
+          Mạng lưới phủ sóng các nước
+        </span>
+        <span class="text-[16px]">
+          J&T Express tự hào đã & đang mở rộng mạng lưới quốc tế để mang đến
+          trải nghiệm tốt nhất
+        </span>
+      </div>
+
+      <div
+        class="mb-12 mb-[34px] mt-[32px] wrapper_about_nations more-countries container mx-auto"
+      >
+        <div class="flex flex-col items-center item-a">
+          <img
+            src="https://jtexpress.vn/themes/jtexpress/assets/images/nation1.png"
+            class="nation-hover w-[50px] h-[50px] shadow-lg rounded-full"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+          />
+          <div
+            class="bg-[#454F5B] text-white rounded-[5px] text-[14px] font-bold hidden lg:block px-[32px] py-[7px] mt-[10px] nation-arrow text-center"
+          >
+            Indonesia
+          </div>
+        </div>
+        <div class="flex flex-col items-center item-b">
+          <img
+            src="https://jtexpress.vn/themes/jtexpress/assets/images/nation2.jpg"
+            class="nation-hover w-[50px] h-[50px] shadow-lg rounded-full"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+          />
+          <div
+            class="bg-[#454F5B] text-white rounded-[5px] text-[14px] font-bold hidden lg:block px-[32px] py-[7px] mt-[10px] nation-arrow text-center"
+          >
+            Malaysia
+          </div>
+        </div>
+        <div class="flex flex-col items-center item-c">
+          <img
+            src="https://jtexpress.vn/themes/jtexpress/assets/images/nation3.jpg"
+            class="nation-hover w-[50px] h-[50px] shadow-lg rounded-full"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+          />
+          <div
+            class="bg-[#454F5B] text-white rounded-[5px] text-[14px] font-bold hidden lg:block px-[32px] py-[7px] mt-[10px] nation-arrow text-center"
+          >
+            Philippines
+          </div>
+        </div>
+        <div class="flex flex-col items-center item-d">
+          <img
+            src="https://jtexpress.vn/themes/jtexpress/assets/images/nation4.jpg"
+            class="nation-hover w-[50px] h-[50px] shadow-lg rounded-full"
+            data-aos="fade-up"
+            data-aos-duration="1700"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+          />
+          <div
+            class="bg-[#454F5B] text-white rounded-[5px] text-[14px] font-bold hidden lg:block px-[32px] py-[7px] mt-[10px] nation-arrow text-center"
+          >
+            Thái Lan
+          </div>
+        </div>
+        <div class="flex flex-col items-center item-e">
+          <img
+            src="https://jtexpress.vn/themes/jtexpress/assets/images/nation5.jpg"
+            class="nation-hover w-[50px] h-[50px] shadow-lg rounded-full"
+            data-aos="fade-up"
+            data-aos-duration="1800"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+          />
+          <div
+            class="bg-[#454F5B] text-white rounded-[5px] text-[14px] font-bold hidden lg:block px-[32px] py-[7px] mt-[10px] nation-arrow text-center"
+          >
+            Singapore
+          </div>
+        </div>
+        <div class="flex flex-col items-center item-f">
+          <img
+            src="https://jtexpress.vn/themes/jtexpress/assets/images/nation6.jpg"
+            class="nation-hover w-[50px] h-[50px] shadow-lg rounded-full"
+            data-aos="fade-up"
+            data-aos-duration="1900"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+          />
+          <div
+            class="bg-[#454F5B] text-white rounded-[5px] text-[14px] font-bold hidden lg:block px-[32px] py-[7px] mt-[10px] nation-arrow text-center"
+          >
+            Campuchia
+          </div>
+        </div>
+        <div class="flex flex-col items-center item-g">
+          <img
+            src="https://jtexpress.vn/themes/jtexpress/assets/images/mexico.png"
+            class="nation-hover w-[50px] h-[50px] shadow-lg rounded-full"
+            data-aos="fade-up"
+            data-aos-duration="2200"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+          />
+          <div
+            class="bg-[#454F5B] text-white rounded-[5px] text-[14px] font-bold hidden lg:block py-[7px] mt-[10px] nation-arrow text-center"
+          >
+            Mexico
+          </div>
+        </div>
+        <div class="flex flex-col items-center item-h">
+          <img
+            src="https://jtexpress.vn/themes/jtexpress/assets/images/saudi.png"
+            class="nation-hover w-[50px] h-[50px] shadow-lg rounded-full"
+            data-aos="fade-up"
+            data-aos-duration="2100"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+          />
+          <div
+            class="bg-[#454F5B] text-white rounded-[5px] text-[14px] font-bold hidden lg:block py-[7px] mt-[10px] nation-arrow text-center"
+          >
+            Saudi Arabia
+          </div>
+        </div>
+        <div class="flex flex-col items-center item-i">
+          <img
+            src="https://jtexpress.vn/themes/jtexpress/assets/images/uae.png"
+            class="nation-hover w-[50px] h-[50px] shadow-lg rounded-full"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+          />
+          <div
+            class="bg-[#454F5B] text-white rounded-[5px] text-[14px] font-bold hidden lg:block py-[7px] mt-[10px] nation-arrow text-center"
+          >
+            UAE
+          </div>
+        </div>
+      </div>
+
+      <!-- About us -->
+      <div class="overflow-hidden bg-[#F4F4F4] mb-12">
+        <div class="wrapper_about_us container mx-auto">
+          <div class="wrapper_about_us_text lg:relative px-4 lg:px-0">
+            <div class="w-full lg:w-[345px] my-auto">
+              <h1
+                class="text-[30px] lg:[40px] font-bold text-center lg:text-left mb-[23px] lg:mb-4 mt-[35px] lg:mt-0"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                VỀ CHÚNG TÔI
+              </h1>
+              <span
+                class="text-center lg:text-left font-medium"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
+                J&T Express là thương hiệu chuyển phát nhanh dựa trên sự phát
+                triển của công nghệ và Internet. Chúng tôi sở hữu mạng lưới rộng
+                khắp nhằm hỗ trợ các hoạt động giao nhận hàng hóa nhanh chóng
+                không chỉ ở nội thành mà còn ở ngoại thành và các vùng xa của
+                các tỉnh thành trong cả nước Việt Nam.
+              </span>
+              <img
+                class="lg:block hidden mt-16"
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/stroke-at-home.png"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              />
+            </div>
+            <div class="lg:bg-white"></div>
+          </div>
+          <div class="wrapper_about_us_items mt-8 lg:mt-0 px-10 lg:px-0">
+            <div
+              class="flex flex-col items-center lg:items-start justify-center mt-[41px] lg:mt-0"
+              data-aos="fade-left"
+              data-aos-duration="500"
+            >
+              <img
+                class="mb-6"
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/63tinh-thanh.png"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              />
+              <h5 class="text-[16px] font-bold mb-1">63 TỈNH THÀNH</h5>
+              <span class="text-center lg:text-left">
+                Dịch vụ phủ sóng khắp 63 tỉnh thành
+              </span>
+            </div>
+            <div
+              class="flex flex-col items-center lg:items-start justify-center mt-[41px] lg:mt-0"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <img
+                class="mb-6"
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/63tinh-thanh.png"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              />
+              <h5 class="text-[16px] font-bold mb-1">ĐA DẠNG PHƯƠNG TIỆN</h5>
+              <span class="text-center lg:text-left">
+                Đa dạng phương tiện vận chuyển hàng hóa
+              </span>
+            </div>
+            <div
+              class="flex flex-col items-center lg:items-start justify-center mt-[41px] lg:mt-0"
+              data-aos="fade-left"
+              data-aos-duration="500"
+            >
+              <img
+                class="mb-6"
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/25000nhan-vien.png"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              />
+              <h5 class="text-[16px] font-bold mb-1">NHÂN SỰ CHUYÊN NGHIỆP</h5>
+              <span class="text-center lg:text-left">
+                Nhân sự được đào tạo bài bản & chuyên nghiệp
+              </span>
+            </div>
+            <div
+              class="flex flex-col items-center lg:items-start justify-center mt-[41px] lg:mt-0"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <img
+                class="mb-6"
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/1900bu-cuc.png"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              />
+              <h5 class="text-[16px] font-bold mb-1">BƯU CỤC RỘNG KHẮP</h5>
+              <span class="text-center lg:text-left">
+                Mạng lưới bưu cục rộng khắp hoạt động trên toàn quốc
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="hidden lg:block">
+        <div
+          class="carousel mb-8 container mx-auto overflow-hidden"
+          style="background: white !important"
+          data-flickity='{"pageDots": false, "prevNextButtons": false , "resize": false , "contain": true}'
+          tabindex="0"
+        >
+          <a
+            class="carousel_cell_branch_desktop is-selected"
+            href="standard-service"
+            style="position: absolute; left: 0%"
+          >
+            <div
+              class="h-[300px] bg-[#F4F4F4] rounded-[2px] w-full mx-auto flex flex-col items-start justify-center relative"
+            >
+              <div class="h-[215px] w-full overflow-hidden">
+                <img
+                  onmouseover="handleMouseOver(this)"
+                  onmouseout="handleMouseOut(this)"
+                  class="w-full h-full object-cover"
+                  src="https://jtexpress.vn/storage/app/uploads/public/627/5d6/866/6275d6866e7c4229470575.png"
+                  data-default="https://jtexpress.vn/storage/app/uploads/public/627/5d6/866/6275d6866e7c4229470575.png"
+                  data-active="https://jtexpress.vn/storage/app/uploads/public/627/5d6/892/6275d68928ffd381036854.png"
+                  alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                />
+              </div>
+              <div
+                class="flex flex-col items-start justify-start py-6 mt-auto pl-[15px]"
+              >
+                <span class="text-[#161D25] text-[20px] font-bold text-left">
+                  J&T Express
+                </span>
+                <span class="text-[#000000] text-[16px]">
+                  Chuyển phát tiêu chuẩn
+                </span>
+              </div>
+            </div>
+          </a>
+          <a
+            class="carousel_cell_branch_desktop"
+            href="fast-service"
+            aria-hidden="true"
+            style="position: absolute; left: 20.5%"
+          >
+            <div
+              class="h-[300px] bg-[#F4F4F4] rounded-[2px] w-full mx-auto flex flex-col items-start justify-center relative"
+            >
+              <div class="h-[215px] w-full overflow-hidden">
+                <img
+                  onmouseover="handleMouseOver(this)"
+                  onmouseout="handleMouseOut(this)"
+                  class="w-full h-full object-cover"
+                  src="https://jtexpress.vn/storage/app/uploads/public/618/4e6/37b/6184e637b45ca442099845.png"
+                  data-default="https://jtexpress.vn/storage/app/uploads/public/618/4e6/37b/6184e637b45ca442099845.png"
+                  data-active="https://jtexpress.vn/storage/app/uploads/public/619/5c4/ce0/6195c4ce070cf022802769.png"
+                  alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                />
+              </div>
+              <div
+                class="flex flex-col items-start justify-start py-6 mt-auto pl-[15px]"
+              >
+                <span class="text-[#161D25] text-[20px] font-bold text-left">
+                  J&T Fast
+                </span>
+                <span class="text-[#000000] text-[16px]"> Dịch vụ Nhanh </span>
+              </div>
+            </div>
+          </a>
+          <a
+            class="carousel_cell_branch_desktop"
+            href="super-service"
+            aria-hidden="true"
+            style="position: absolute; left: 41%"
+          >
+            <div
+              class="h-[300px] bg-[#F4F4F4] rounded-[2px] w-full mx-auto flex flex-col items-start justify-center relative"
+            >
+              <div class="h-[215px] w-full overflow-hidden">
+                <img
+                  onmouseover="handleMouseOver(this)"
+                  onmouseout="handleMouseOut(this)"
+                  class="w-full h-full object-cover"
+                  src="https://jtexpress.vn/storage/app/uploads/public/618/4e6/872/6184e6872c887801133904.png"
+                  data-default="https://jtexpress.vn/storage/app/uploads/public/618/4e6/872/6184e6872c887801133904.png"
+                  data-active="https://jtexpress.vn/storage/app/uploads/public/619/5c4/ddc/6195c4ddc40c9859154502.png"
+                  alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                />
+              </div>
+              <div
+                class="flex flex-col items-start justify-start py-6 mt-auto pl-[15px]"
+              >
+                <span class="text-[#161D25] text-[20px] font-bold text-left">
+                  J&T Super
+                </span>
+                <span class="text-[#000000] text-[16px]">
+                  Siêu dịch vụ giao hàng
+                </span>
+              </div>
+            </div>
+          </a>
+          <a
+            class="carousel_cell_branch_desktop"
+            href="fresh-service"
+            aria-hidden="true"
+            style="position: absolute; left: 61.5%"
+          >
+            <div
+              class="h-[300px] bg-[#F4F4F4] rounded-[2px] w-full mx-auto flex flex-col items-start justify-center relative"
+            >
+              <div class="h-[215px] w-full overflow-hidden">
+                <img
+                  onmouseover="handleMouseOver(this)"
+                  onmouseout="handleMouseOut(this)"
+                  class="w-full h-full object-cover"
+                  src="https://jtexpress.vn/storage/app/uploads/public/618/4e8/077/6184e8077e894431352453.png"
+                  data-default="https://jtexpress.vn/storage/app/uploads/public/618/4e8/077/6184e8077e894431352453.png"
+                  data-active="https://jtexpress.vn/storage/app/uploads/public/619/5c4/e9d/6195c4e9de7b0113757598.png"
+                  alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                />
+              </div>
+              <div
+                class="flex flex-col items-start justify-start py-6 mt-auto pl-[15px]"
+              >
+                <span class="text-[#161D25] text-[20px] font-bold text-left">
+                  J&T Fresh
+                </span>
+                <span class="text-[#000000] text-[16px]">
+                  Giao hàng tươi sống
+                </span>
+              </div>
+            </div>
+          </a>
+          <a
+            class="carousel_cell_branch_desktop"
+            href="international-service"
+            aria-hidden="true"
+            style="position: absolute; left: 82%"
+          >
+            <div
+              class="h-[300px] bg-[#F4F4F4] rounded-[2px] w-full mx-auto flex flex-col items-start justify-center relative"
+            >
+              <div class="h-[215px] w-full overflow-hidden">
+                <img
+                  onmouseover="handleMouseOver(this)"
+                  onmouseout="handleMouseOut(this)"
+                  class="w-full h-full object-cover"
+                  src="https://jtexpress.vn/storage/app/uploads/public/618/4e8/3e6/6184e83e686f3000007508.png"
+                  data-default="https://jtexpress.vn/storage/app/uploads/public/618/4e8/3e6/6184e83e686f3000007508.png"
+                  data-active="https://jtexpress.vn/storage/app/uploads/public/619/5c4/f4e/6195c4f4e2091803396977.png"
+                  alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                />
+              </div>
+              <div
+                class="flex flex-col items-start justify-start py-6 mt-auto pl-[15px]"
+              >
+                <span class="text-[#161D25] text-[20px] font-bold text-left">
+                  J&T International
+                </span>
+                <span class="text-[#000000] text-[16px]">
+                  Giao hàng quốc tế
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="block lg:hidden">
+        <div
+          class="carousel mb-8"
+          style="background: white !important"
+          data-flickity='{ "wrapAround": true ,"pageDots": false, "prevNextButtons": false }'
+          tabindex="0"
+        >
+          <a
+            class="carousel_cell_branch_mobile is-selected"
+            href="standard-service"
+            style="position: absolute; left: 0%"
+          >
+            <div
+              class="h-full bg-[#F4F4F4] rounded-[2px] w-full mx-auto flex flex-col items-start justify-center relative"
+            >
+              <div class="h-[80%] w-full">
+                <img
+                  onmouseover="handleMouseOver(this)"
+                  onmouseout="handleMouseOut(this)"
+                  class="w-full h-full object-cover"
+                  src="https://jtexpress.vn/storage/app/uploads/public/627/5d6/866/6275d6866e7c4229470575.png"
+                  data-default="https://jtexpress.vn/storage/app/uploads/public/627/5d6/866/6275d6866e7c4229470575.png"
+                  data-active="https://jtexpress.vn/storage/app/uploads/public/627/5d6/892/6275d68928ffd381036854.png"
+                  alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                />
+              </div>
+              <div
+                class="flex flex-col items-start justify-start py-6 mt-auto pl-[15px]"
+              >
+                <span class="text-[#161D25] text-[20px] font-bold">
+                  J&T Express
+                </span>
+                <span class="text-[#000000] text-[16px]">
+                  Chuyển phát tiêu chuẩn
+                </span>
+              </div>
+            </div>
+          </a>
+          <a
+            class="carousel_cell_branch_mobile"
+            href="fast-service"
+            aria-hidden="true"
+            style="position: absolute; left: 67.18%"
+          >
+            <div
+              class="h-full bg-[#F4F4F4] rounded-[2px] w-full mx-auto flex flex-col items-start justify-center relative"
+            >
+              <div class="h-[80%] w-full">
+                <img
+                  onmouseover="handleMouseOver(this)"
+                  onmouseout="handleMouseOut(this)"
+                  class="w-full h-full object-cover"
+                  src="https://jtexpress.vn/storage/app/uploads/public/618/4e6/37b/6184e637b45ca442099845.png"
+                  data-default="https://jtexpress.vn/storage/app/uploads/public/618/4e6/37b/6184e637b45ca442099845.png"
+                  data-active="https://jtexpress.vn/storage/app/uploads/public/619/5c4/ce0/6195c4ce070cf022802769.png"
+                  alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                />
+              </div>
+              <div
+                class="flex flex-col items-start justify-start py-6 mt-auto pl-[15px]"
+              >
+                <span class="text-[#161D25] text-[20px] font-bold">
+                  J&T Fast
+                </span>
+                <span class="text-[#000000] text-[16px]"> Dịch vụ Nhanh </span>
+              </div>
+            </div>
+          </a>
+          <a
+            class="carousel_cell_branch_mobile"
+            href="super-service"
+            aria-hidden="true"
+            style="position: absolute; left: 134.35%"
+          >
+            <div
+              class="h-full bg-[#F4F4F4] rounded-[2px] w-full mx-auto flex flex-col items-start justify-center relative"
+            >
+              <div class="h-[80%] w-full">
+                <img
+                  onmouseover="handleMouseOver(this)"
+                  onmouseout="handleMouseOut(this)"
+                  class="w-full h-full object-cover"
+                  src="https://jtexpress.vn/storage/app/uploads/public/618/4e6/872/6184e6872c887801133904.png"
+                  data-default="https://jtexpress.vn/storage/app/uploads/public/618/4e6/872/6184e6872c887801133904.png"
+                  data-active="https://jtexpress.vn/storage/app/uploads/public/619/5c4/ddc/6195c4ddc40c9859154502.png"
+                  alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                />
+              </div>
+              <div
+                class="flex flex-col items-start justify-start py-6 mt-auto pl-[15px]"
+              >
+                <span class="text-[#161D25] text-[20px] font-bold">
+                  J&T Super
+                </span>
+                <span class="text-[#000000] text-[16px]">
+                  Siêu dịch vụ giao hàng
+                </span>
+              </div>
+            </div>
+          </a>
+          <a
+            class="carousel_cell_branch_mobile"
+            href="fresh-service"
+            aria-hidden="true"
+            style="position: absolute; left: 201.53%"
+          >
+            <div
+              class="h-full bg-[#F4F4F4] rounded-[2px] w-full mx-auto flex flex-col items-start justify-center relative"
+            >
+              <div class="h-[80%] w-full">
+                <img
+                  onmouseover="handleMouseOver(this)"
+                  onmouseout="handleMouseOut(this)"
+                  class="w-full h-full object-cover"
+                  src="https://jtexpress.vn/storage/app/uploads/public/618/4e8/077/6184e8077e894431352453.png"
+                  data-default="https://jtexpress.vn/storage/app/uploads/public/618/4e8/077/6184e8077e894431352453.png"
+                  data-active="https://jtexpress.vn/storage/app/uploads/public/619/5c4/e9d/6195c4e9de7b0113757598.png"
+                  alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                />
+              </div>
+              <div
+                class="flex flex-col items-start justify-start py-6 mt-auto pl-[15px]"
+              >
+                <span class="text-[#161D25] text-[20px] font-bold">
+                  J&T Fresh
+                </span>
+                <span class="text-[#000000] text-[16px]">
+                  Giao hàng tươi sống
+                </span>
+              </div>
+            </div>
+          </a>
+          <a
+            class="carousel_cell_branch_mobile"
+            href="international-service"
+            aria-hidden="true"
+            style="position: absolute; left: 268.71%"
+          >
+            <div
+              class="h-full bg-[#F4F4F4] rounded-[2px] w-full mx-auto flex flex-col items-start justify-center relative"
+            >
+              <div class="h-[80%] w-full">
+                <img
+                  onmouseover="handleMouseOver(this)"
+                  onmouseout="handleMouseOut(this)"
+                  class="w-full h-full object-cover"
+                  src="https://jtexpress.vn/storage/app/uploads/public/618/4e8/3e6/6184e83e686f3000007508.png"
+                  data-default="https://jtexpress.vn/storage/app/uploads/public/618/4e8/3e6/6184e83e686f3000007508.png"
+                  data-active="https://jtexpress.vn/storage/app/uploads/public/619/5c4/f4e/6195c4f4e2091803396977.png"
+                  alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                />
+              </div>
+              <div
+                class="flex flex-col items-start justify-start py-6 mt-auto pl-[15px]"
+              >
+                <span class="text-[#161D25] text-[20px] font-bold">
+                  J&T International
+                </span>
+                <span class="text-[#000000] text-[16px]">
+                  Giao hàng quốc tế
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Video -->
+      <div
+        class="h-[186px] md:h-[605px] rounded-[2px] mx-auto flex items-center justify-center relative mb-[40px] mt-[46px] container px-4 md:px-0"
+      >
+        <iframe
+          id="touchplayer"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/yvSA11yttxk?rel=0&autoplay=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+
+      <!--  -->
+      <div
+        class="h-[670px] md:h-[503px] lg:h-[462px] mb-8 relative overflow-hidden endPositionIframe"
+      >
+        <img
+          class="w-full h-full object-cover"
+          src="https://jtexpress.vn/themes/jtexpress/assets/images/bg-download-appnew.png"
+          alt="J&T Express - Giao hàng Chuyển phát nhanh"
+        />
+        <div
+          class="container flex flex-col md:flex-row items-center justify-center absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+        >
+          <div
+            class="text-[#FFFFFF] flex flex-col items-center text-center lg:mr-12 w-[433px] px-4 lg:px-0"
+          >
+            <h5
+              class="text-[30px] lg:text-[40px] font-bold mb-[19px] lg:mb-0 mt-[120px] lg:mt-0"
+            >
+              TẢI ỨNG DỤNG
+            </h5>
+
+            <div
+              class="text-[16px] mb-[50px] lg:mb-4 inline-block font-medium flex flex-col"
+            >
+              <span class="block px-[50px] md:px-0">
+                Tải ngay App J&T Express - Giao Hàng Nhanh
+              </span>
+              <span class="block px-[50px] md:px-0">
+                Hưởng trọn bộ tính năng giao hàng chỉ với 1 chạm
+              </span>
+            </div>
+            <div class="flex items-center">
+              <a
+                href="https://apps.apple.com/us/app/j-t-vnm-vip/id1474072185"
+                target="_blank"
+              >
+                <img
+                  class="mr-2"
+                  src="https://jtexpress.vn/storage/app/uploads/public/627/5ca/259/6275ca259876b348340439.png"
+                  alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              /></a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.msd.VIPyueNanClient&hl=vi&gl=US"
+                target="_blank"
+                ><img
+                  class="ml-2"
+                  src="https://jtexpress.vn/storage/app/uploads/public/627/5ca/bd7/6275cabd7222d202962202.png"
+                  alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              /></a>
+            </div>
+          </div>
+          <div class="lg:ml-12 mt-10">
+            <img
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/phone-at-home.png"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog -->
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col md:flex-row mb-8 items-center justify-between"
+        >
+          <h5
+            class="text-[#FF0000] mb-[14px] lg:mb-0 lg:text-[#161D25] text-[30px] lg:text-[40px] uppercase font-bold"
+          >
+            BLOG
+          </h5>
+          <div class="flex px-2 md:px-0">
+            <span
+              class="blog text-[12px] lg:text-[16px] cursor-pointer bg-[#F4F4F4] rounded-[20px] md:block flex items-center justify-center text-center px-4 w-1/3 md:w-auto py-2 mb-2 text-[#8A8E92] hover:bg-[#FFF2F4] hover:text-[#FF0000] transition-colors font-bold blog_title-active"
+              onclick="changeBlog(0)"
+            >
+              Tin tức nổi bật
+            </span>
+            <span
+              class="blog text-[12px] lg:text-[16px] cursor-pointer bg-[#F4F4F4] rounded-[20px] md:block flex items-center justify-center text-center px-4 w-1/3 md:w-auto py-2 text-[#8A8E92] mb-2 hover:bg-[#FFF2F4] hover:text-[#FF0000] transition-colors font-bold"
+              onclick="changeBlog(1)"
+              >J-Magazine
+            </span>
+          </div>
+        </div>
+        <div class="mb-10">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-3 gap-x-[50px] gap-y-[50px] px-4 lg:px-0"
+            id="hot-news"
+          >
+            <div
+              class="post-item rounded-[10px] overflow-hidden"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubi"
+              data-aos-duration="1500"
+            >
+              <div
+                class="featured-images h-[350px] w-full lg:w-[350px] overflow-hidden"
+              >
+                <a
+                  class="h-full h-full block"
+                  href="https://jtexpress.vn/vi/news-detail/gui-hang-tang-vang-cung-jt-express"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    src="https://jtexpress.vn/storage/app/uploads/public/65f/17c/7e1/65f17c7e1ed27890883013.jpg"
+                    alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                  />
+                </a>
+              </div>
+              <div class="bg-[#F4F4F4] px-6 py-4 post-content mt-auto">
+                <div class="flex items-center text-[#8A8E92] text-[14px]">
+                  <ion-icon
+                    name="calendar-clear-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="calendar clear outline"
+                  ></ion-icon>
+                  <span class="ml-2">13/03/2024</span>
+                </div>
+                <h5 class="text-[#161D25] text-[20px] font-bold">
+                  <a
+                    href="https://jtexpress.vn/vi/news-detail/gui-hang-tang-vang-cung-jt-express"
+                    >Gửi hàng tặng vàng cùng J&T Express</a
+                  >
+                </h5>
+                <span class="post-description"
+                  >Từ 1/3 đến hết 31/3, khách hàng với lượng đơn trung bình mỗi
+                  ngày từ 299 đơn trở lên có cơ hội nhận thưởng vàng PNJ.</span
+                >
+              </div>
+            </div>
+            <div
+              class="post-item rounded-[10px] overflow-hidden"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubi"
+              data-aos-duration="1500"
+            >
+              <div
+                class="featured-images h-[350px] w-full lg:w-[350px] overflow-hidden"
+              >
+                <a
+                  class="h-full h-full block"
+                  href="https://jtexpress.vn/vi/news-detail/chuyen-chu-shop-khoi-nghiep-tu-dam-me-voi-ao-dai"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    src="https://jtexpress.vn/storage/app/uploads/public/65e/936/572/65e936572492d808456106.jpg"
+                    alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                  />
+                </a>
+              </div>
+              <div class="bg-[#F4F4F4] px-6 py-4 post-content mt-auto">
+                <div class="flex items-center text-[#8A8E92] text-[14px]">
+                  <ion-icon
+                    name="calendar-clear-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="calendar clear outline"
+                  ></ion-icon>
+                  <span class="ml-2">07/03/2024</span>
+                </div>
+                <h5 class="text-[#161D25] text-[20px] font-bold">
+                  <a
+                    href="https://jtexpress.vn/vi/news-detail/chuyen-chu-shop-khoi-nghiep-tu-dam-me-voi-ao-dai"
+                    >Chuyện chủ shop: Khởi nghiệp từ đam mê với áo dài</a
+                  >
+                </h5>
+                <span class="post-description"
+                  >Nhân dịp ngày quốc tế phụ nữ 8/3, hãy cùng lắng nghe những
+                  chia sẻ của Trang - Chủ cửa hàng thời trang thiết kế miên
+                  atelier để hiểu hơn về hành trình khởi nghiệp và kinh doanh
+                  online của các chị em các bạn nhé!</span
+                >
+              </div>
+            </div>
+            <div
+              class="post-item rounded-[10px] overflow-hidden relative"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubi"
+              data-aos-duration="1500"
+            >
+              <img
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/Union.png"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                class="absolute right-[10px] top-0 w-[21px] h-[34px] object-cover"
+              />
+              <div
+                class="featured-images h-[350px] w-full lg:w-[350px] overflow-hidden"
+              >
+                <a
+                  class="h-full h-full block"
+                  href="https://jtexpress.vn/vi/magazine-detail/dia-phuong-hoa-chien-luoc-mui-nhon-cua-jt-express"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    src="https://jtexpress.vn/storage/app/uploads/public/646/b16/8a0/646b168a0ae2a599086942.jpg"
+                    alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                  />
+                </a>
+              </div>
+              <div class="bg-[#F4F4F4] px-6 py-4 post-content mt-auto">
+                <div class="flex items-center text-[#8A8E92] text-[14px]">
+                  <ion-icon
+                    name="calendar-clear-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="calendar clear outline"
+                  ></ion-icon>
+                  <span class="ml-2">22/05/2023</span>
+                </div>
+                <h5 class="text-[#161D25] text-[20px] font-bold">
+                  <a
+                    href="https://jtexpress.vn/vi/magazine-detail/dia-phuong-hoa-chien-luoc-mui-nhon-cua-jt-express"
+                    >Địa phương hóa - Chiến lược mũi nhọn của J&T Express</a
+                  >
+                </h5>
+                <span class="post-description"
+                  >J&T Express mang yếu tố quốc tế hòa nhập vào từng địa phương,
+                  tạo nên bản sắc riêng ở mỗi nơi mà hành trình giao nhận đi
+                  qua. Và điểm đến lần này là Huế.</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden grid grid-cols-1 lg:grid-cols-3 gap-x-[50px] gap-y-[50px] px-4 lg:px-0"
+            id="j-magazine"
+          >
+            <div
+              class="post-item rounded-[10px] overflow-hidden"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubi"
+              data-aos-duration="1500"
+            >
+              <div
+                class="featured-images w-full h-[350px] lg:w-[350px] overflow-hidden"
+              >
+                <a
+                  class="h-full h-full block"
+                  href="https://jtexpress.vn/vi/magazine-detail/dia-phuong-hoa-chien-luoc-mui-nhon-cua-jt-express"
+                >
+                  <img
+                    class="h-full h-full object-cover"
+                    src="https://jtexpress.vn/storage/app/uploads/public/646/b16/8a0/646b168a0ae2a599086942.jpg"
+                    alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                  />
+                </a>
+              </div>
+              <div class="bg-[#F4F4F4] px-6 py-4 post-content mt-auto">
+                <div class="flex items-center text-[#8A8E92] text-[14px]">
+                  <ion-icon
+                    name="calendar-clear-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="calendar clear outline"
+                  ></ion-icon>
+                  <span class="ml-2">22/05/2023</span>
+                </div>
+                <h5 class="text-[#161D25] text-[20px] font-bold">
+                  <a
+                    href="https://jtexpress.vn/vi/magazine-detail/dia-phuong-hoa-chien-luoc-mui-nhon-cua-jt-express"
+                    >Địa phương hóa - Chiến lược mũi nhọn của J&T Express</a
+                  >
+                </h5>
+                <span class="post-description"
+                  >J&T Express mang yếu tố quốc tế hòa nhập vào từng địa phương,
+                  tạo nên bản sắc riêng ở mỗi nơi mà hành trình giao nhận đi
+                  qua. Và điểm đến lần này là Huế.</span
+                >
+              </div>
+            </div>
+            <div
+              class="post-item rounded-[10px] overflow-hidden"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubi"
+              data-aos-duration="1500"
+            >
+              <div
+                class="featured-images w-full h-[350px] lg:w-[350px] overflow-hidden"
+              >
+                <a
+                  class="h-full h-full block"
+                  href="https://jtexpress.vn/vi/magazine-detail/jt-express-ra-mat-trung-tam-trung-chuyen-lon-nhat-viet-nam"
+                >
+                  <img
+                    class="h-full h-full object-cover"
+                    src="https://jtexpress.vn/storage/app/uploads/public/62c/e24/34a/62ce2434af26d531512016.jpg"
+                    alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                  />
+                </a>
+              </div>
+              <div class="bg-[#F4F4F4] px-6 py-4 post-content mt-auto">
+                <div class="flex items-center text-[#8A8E92] text-[14px]">
+                  <ion-icon
+                    name="calendar-clear-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="calendar clear outline"
+                  ></ion-icon>
+                  <span class="ml-2">13/07/2022</span>
+                </div>
+                <h5 class="text-[#161D25] text-[20px] font-bold">
+                  <a
+                    href="https://jtexpress.vn/vi/magazine-detail/jt-express-ra-mat-trung-tam-trung-chuyen-lon-nhat-viet-nam"
+                    >J&T Express ra mắt Trung tâm trung chuyển lớn nhất Việt
+                    Nam</a
+                  >
+                </h5>
+                <span class="post-description"
+                  >Với diện tích 60.000m2, xử lý lên đến 2 triệu hàng hóa/ngày,
+                  Trung tâm khai thác mới khánh thành của J&T Express được đánh
+                  giá là “cú bứt tốc lịch sử”, mở đường khai phá tiềm năng lĩnh
+                  vực hậu cần chuyển phát nhanh trong thời gian tới.</span
+                >
+              </div>
+            </div>
+            <div
+              class="post-item rounded-[10px] overflow-hidden"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubi"
+              data-aos-duration="1500"
+            >
+              <div
+                class="featured-images w-full h-[350px] lg:w-[350px] overflow-hidden"
+              >
+                <a
+                  class="h-full h-full block"
+                  href="https://jtexpress.vn/vi/magazine-detail/me-bim-sua-va-co-hoi-khang-dinh-ban"
+                >
+                  <img
+                    class="h-full h-full object-cover"
+                    src="https://jtexpress.vn/storage/app/uploads/public/62b/042/180/62b042180bf74845465697.png"
+                    alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                  />
+                </a>
+              </div>
+              <div class="bg-[#F4F4F4] px-6 py-4 post-content mt-auto">
+                <div class="flex items-center text-[#8A8E92] text-[14px]">
+                  <ion-icon
+                    name="calendar-clear-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="calendar clear outline"
+                  ></ion-icon>
+                  <span class="ml-2">20/06/2022</span>
+                </div>
+                <h5 class="text-[#161D25] text-[20px] font-bold">
+                  <a
+                    href="https://jtexpress.vn/vi/magazine-detail/me-bim-sua-va-co-hoi-khang-dinh-ban"
+                    >Mẹ bỉm sữa và cơ hội khẳng định bản thân</a
+                  >
+                </h5>
+                <span class="post-description"
+                  >Lựa chọn cân bằng cuộc sống chưa bao giờ là dễ, đặc biệt là
+                  với mẹ bỉm sữa như chị Kim Kiều.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ĐỐI TÁC NÓI VỀ CHÚNG TÔI -->
+        <div>
+          <h5
+            class="text-[#161D25] text-center lg:text-left text-[30px] lg:text-[40px] uppercase font-bold mb-8 pl-4 lg:pl-0"
+          >
+            Đối tác nói về chúng tôi
+          </h5>
+          <div
+            class="w-full wrapper_people__says px-4 lg:px-0 mb-8 overflow-hidden"
+          >
+            <div
+              class="bg-[#F4F4F4] px-[22px] lg:px-[44px] py-[23px] lg:py-0 mb-4 lg:mb-0 rounded-[10px] overflow-hidden flex flex-col justify-center"
+            >
+              <span
+                class="block description-with-5-line text-justify description-with-15-line"
+              >
+                Từ khi đặt chân vào Việt Nam năm 2018, J&T Express luôn nỗ lực
+                hết mình, hoàn thành nghĩa vụ của một đối tác vận chuyển lớn
+                trong khu vực, mang lại dịch vụ tốt nhất cho tất cả khách hàng,
+                nhận về nhiều lời khen và nhận xét tích cực. Đây là sự tự hào và
+                động lực để J&T Express tiếp tục giữ vững thành tích, phát huy
+                dịch vụ, nâng cao hơn nữa trải nghiệm khách hàng.
+              </span>
+              <div class="mt-[34px] autoplay w-full mx-auto overflow-hidden">
+                <div>
+                  <div class="flex flex-col items-center">
+                    <div class="rounded-full h-[134px] w-[134px]">
+                      <img
+                        onclick="showDetails(this)"
+                        data-name-type="Đỗ Thị Vân"
+                        data-content-type='"Nhờ dịch vụ J&T International gửi đi hàng mẫu thành công, nhanh chóng mà vừa rồi tôi đã có được hợp đồng cung cấp sản phẩm cho một công ty ở Mỹ."'
+                        data-logo-type=""
+                        data-position-type="Chủ cửa hàng đồ gốm tại TP. Hà Nội"
+                        data-image-type="https://jtexpress.vn/storage/app/uploads/public/628/374/58a/62837458a31d2598134718.jpg"
+                        src="https://jtexpress.vn/storage/app/uploads/public/628/374/58a/62837458a31d2598134718.jpg"
+                        class="h-full rounded-full w-full"
+                        alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                      />
+                    </div>
+                    <span
+                      class="mt-[8px] mb-[4px] block text-[14px] text-center Montserrat-Bold"
+                      >Đỗ Thị Vân</span
+                    >
+                    <span class="text-[#5D6A7A] text-center text-[14px]">
+                      Chủ cửa hàng đồ gốm tại TP. Hà Nội</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <div class="flex flex-col items-center">
+                    <div class="rounded-full h-[134px] w-[134px]">
+                      <img
+                        onclick="showDetails(this)"
+                        data-name-type="Dương Hoàng Minh"
+                        data-content-type='"J&T International là một trợ thủ đắc lực trong quá trình xuất khẩu thành phẩm sang các nước Đông Nam Á của công ty tôi, đặc biệt là gửi hàng trễ chuyến."'
+                        data-logo-type=""
+                        data-position-type="Giám đốc công ty dệt may tại Bắc Ninh"
+                        data-image-type="https://jtexpress.vn/storage/app/uploads/public/628/599/24b/62859924bde0b670971722.jpg"
+                        src="https://jtexpress.vn/storage/app/uploads/public/628/599/24b/62859924bde0b670971722.jpg"
+                        class="h-full rounded-full w-full"
+                        alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                      />
+                    </div>
+                    <span
+                      class="mt-[8px] mb-[4px] block text-[14px] text-center Montserrat-Bold"
+                      >Dương Hoàng Minh</span
+                    >
+                    <span class="text-[#5D6A7A] text-center text-[14px]">
+                      Giám đốc công ty dệt may tại Bắc Ninh</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <div class="flex flex-col items-center">
+                    <div class="rounded-full h-[134px] w-[134px]">
+                      <img
+                        onclick="showDetails(this)"
+                        data-name-type="Trần Minh Trí"
+                        data-content-type='"Gửi hàng mẫu cà phê đi nước ngoài không phải là chuyện dễ để cân đối thu chi, tối ưu chi phí cho công ty. May là công ty chúng tôi tìm được J&T International. Dịch vụ vượt mong đợi với giá cả phải chăng, lại còn hay có ưu đãi."'
+                        data-logo-type=""
+                        data-position-type="Giám đốc công ty cà phê tại Buôn Ma Thuột"
+                        data-image-type="https://jtexpress.vn/storage/app/uploads/public/628/374/c8b/628374c8ba994977079446.jpg"
+                        src="https://jtexpress.vn/storage/app/uploads/public/628/374/c8b/628374c8ba994977079446.jpg"
+                        class="h-full rounded-full w-full"
+                        alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                      />
+                    </div>
+                    <span
+                      class="mt-[8px] mb-[4px] block text-[14px] text-center Montserrat-Bold"
+                      >Trần Minh Trí</span
+                    >
+                    <span class="text-[#5D6A7A] text-center text-[14px]">
+                      Giám đốc công ty cà phê tại Buôn Ma Thuột</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <div class="flex flex-col items-center">
+                    <div class="rounded-full h-[134px] w-[134px]">
+                      <img
+                        onclick="showDetails(this)"
+                        data-name-type="Vũ An Phương"
+                        data-content-type='"Nhờ J&T Express mà shop của tôi được nhiều khách hàng đánh giá tốt về thời gian ship hàng. Giá thành tiết kiệm, đội ngũ shipper chuyên nghiệp hỗ trợ rất nhiều cho công việc kinh doanh của tôi."'
+                        data-logo-type=""
+                        data-position-type="Chủ cửa hàng thiết bị gia dụng tại TP. Hà Nội"
+                        data-image-type="https://jtexpress.vn/storage/app/uploads/public/628/5b6/c28/6285b6c28930f965243715.jpg"
+                        src="https://jtexpress.vn/storage/app/uploads/public/628/5b6/c28/6285b6c28930f965243715.jpg"
+                        class="h-full rounded-full w-full"
+                        alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                      />
+                    </div>
+                    <span
+                      class="mt-[8px] mb-[4px] block text-[14px] text-center Montserrat-Bold"
+                      >Vũ An Phương</span
+                    >
+                    <span class="text-[#5D6A7A] text-center text-[14px]">
+                      Chủ cửa hàng thiết bị gia dụng tại TP. Hà Nội</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <div class="flex flex-col items-center">
+                    <div class="rounded-full h-[134px] w-[134px]">
+                      <img
+                        onclick="showDetails(this)"
+                        data-name-type="Võ Ngọc Trâm"
+                        data-content-type='"Tôi đã từng hợp tác với nhiều đơn vị chuyển phát nhưng cuối cùng quyết định đồng hành cùng J&T Express. Phải nói rằng, hệ thống bưu cục đồng nhất về chất lượng khắp 63 tỉnh thành là điểm làm tôi hài lòng nhất."'
+                        data-logo-type=""
+                        data-position-type="Chủ shop quần áo tại TP.HCM"
+                        data-image-type="https://jtexpress.vn/storage/app/uploads/public/628/5ba/16a/6285ba16a1c9c707213911.jpg"
+                        src="https://jtexpress.vn/storage/app/uploads/public/628/5ba/16a/6285ba16a1c9c707213911.jpg"
+                        class="h-full rounded-full w-full"
+                        alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                      />
+                    </div>
+                    <span
+                      class="mt-[8px] mb-[4px] block text-[14px] text-center Montserrat-Bold"
+                      >Võ Ngọc Trâm</span
+                    >
+                    <span class="text-[#5D6A7A] text-center text-[14px]">
+                      Chủ shop quần áo tại TP.HCM</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <div class="flex flex-col items-center">
+                    <div class="rounded-full h-[134px] w-[134px]">
+                      <img
+                        onclick="showDetails(this)"
+                        data-name-type="Trương Ngọc Phương Anh"
+                        data-content-type='"Kinh doanh online hơn 3 năm nay, thái độ và sự hỗ trợ nhiệt tình của shipper J&T Express là điều mà không ở đâu có. Tôi rất hài lòng khi chọn J&T Express cho cửa hàng của mình."'
+                        data-logo-type=""
+                        data-position-type="Chủ văn phòng phẩm tại TP. Cần Thơ"
+                        data-image-type="https://jtexpress.vn/storage/app/uploads/public/628/5ba/ed9/6285baed90db8905365415.jpg"
+                        src="https://jtexpress.vn/storage/app/uploads/public/628/5ba/ed9/6285baed90db8905365415.jpg"
+                        class="h-full rounded-full w-full"
+                        alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                      />
+                    </div>
+                    <span
+                      class="mt-[8px] mb-[4px] block text-[14px] text-center Montserrat-Bold"
+                      >Trương Ngọc Phương Anh</span
+                    >
+                    <span class="text-[#5D6A7A] text-center text-[14px]">
+                      Chủ văn phòng phẩm tại TP. Cần Thơ</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <div class="flex flex-col items-center">
+                    <div class="rounded-full h-[134px] w-[134px]">
+                      <img
+                        onclick="showDetails(this)"
+                        data-name-type="Hoàng Xuân"
+                        data-content-type='"Cửa hàng của tôi luôn ưu tiên lựa chọn J&T Fast để đảm bảo giao nhận nhanh chóng và chất lượng hàng hóa. Đặc biệt là khi khách hàng cần giao gấp để tặng quà sinh nhật hoặc chuẩn bị cho dịp lễ đặc biệt."'
+                        data-logo-type=""
+                        data-position-type="Chủ tiệm nước hoa tại Hà Nội"
+                        data-image-type="https://jtexpress.vn/storage/app/uploads/public/628/5bb/f6a/6285bbf6a3c8b974345432.jpg"
+                        src="https://jtexpress.vn/storage/app/uploads/public/628/5bb/f6a/6285bbf6a3c8b974345432.jpg"
+                        class="h-full rounded-full w-full"
+                        alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                      />
+                    </div>
+                    <span
+                      class="mt-[8px] mb-[4px] block text-[14px] text-center Montserrat-Bold"
+                      >Hoàng Xuân</span
+                    >
+                    <span class="text-[#5D6A7A] text-center text-[14px]">
+                      Chủ tiệm nước hoa tại Hà Nội</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[10px] overflow-hidden h-[507px] flex flex-col">
+              <div class="bg-[#F4F4F4] pt-4 flex-1 flex-shrink">
+                <div class="flex flex-col items-center">
+                  <div class="rounded-full h-36 w-36 mt-2">
+                    <img
+                      id="data_image"
+                      src="https://jtexpress.vn/storage/app/uploads/public/628/5bb/f6a/6285bbf6a3c8b974345432.jpg"
+                      class="h-full rounded-full w-full"
+                      alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                    />
+                  </div>
+                  <span
+                    class="mt-[8px] mb-[4px] block Montserrat-Bold"
+                    id="data_name"
+                    >Hoàng Xuân</span
+                  >
+                  <span class="text-[14px]" id="data_position"
+                    >Chủ tiệm nước hoa tại Hà Nội</span
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-[#EAEDEF] px-[24px] py-[16px] flex-1 flex-shrink"
+                style="box-shadow: 0px 4px 10px rgba(133, 146, 156, 0.3)"
+              >
+                <span
+                  id="data_content"
+                  class="text-left description-with-8-line description-with-15-line"
+                >
+                  "Cửa hàng của tôi luôn ưu tiên lựa chọn J&T Fast để đảm bảo
+                  giao nhận nhanh chóng và chất lượng hàng hóa. Đặc biệt là khi
+                  khách hàng cần giao gấp để tặng quà sinh nhật hoặc chuẩn bị
+                  cho dịp lễ đặc biệt."
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="my-partners-slick mt-10 mb-6 container mx-auto overflow-hidden px-4"
+      >
+        <div>
+          <img
+            src="https://jtexpress.vn/storage/app/uploads/public/627/1fb/ac4/6271fbac43d9d243994463.png"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            class="object-scale-down w-[120px] h-[100px] md:h-[100px] md:w-[220px]"
+          />
+        </div>
+        <div>
+          <img
+            src="https://jtexpress.vn/storage/app/uploads/public/627/1fb/b53/6271fbb5318e6298080325.png"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            class="object-scale-down w-[120px] h-[100px] md:h-[100px] md:w-[220px]"
+          />
+        </div>
+        <div>
+          <img
+            src="https://jtexpress.vn/storage/app/uploads/public/627/1fb/d18/6271fbd18abfc963904367.png"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            class="object-scale-down w-[120px] h-[100px] md:h-[100px] md:w-[220px]"
+          />
+        </div>
+        <div>
+          <img
+            src="https://jtexpress.vn/storage/app/uploads/public/627/1fb/e5e/6271fbe5ea59d010174455.png"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            class="object-scale-down w-[120px] h-[100px] md:h-[100px] md:w-[220px]"
+          />
+        </div>
+        <div>
+          <img
+            src="https://jtexpress.vn/storage/app/uploads/public/629/9c6/0a6/6299c60a6662d497515747.png"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            class="object-scale-down w-[120px] h-[100px] md:h-[100px] md:w-[220px]"
+          />
+        </div>
+        <div>
+          <img
+            src="https://jtexpress.vn/storage/app/uploads/public/629/9bd/146/6299bd1466138263975620.png"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            class="object-scale-down w-[120px] h-[100px] md:h-[100px] md:w-[220px]"
+          />
+        </div>
+        <div>
+          <img
+            src="https://jtexpress.vn/storage/app/uploads/public/629/9c1/536/6299c1536126c561166062.png"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            class="object-scale-down w-[120px] h-[100px] md:h-[100px] md:w-[220px]"
+          />
+        </div>
+        <div>
+          <img
+            src="https://jtexpress.vn/storage/app/uploads/public/629/9c3/412/6299c34126414957820349.png"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            class="object-scale-down w-[120px] h-[100px] md:h-[100px] md:w-[220px]"
+          />
+        </div>
+        <div>
+          <img
+            src="https://jtexpress.vn/storage/app/uploads/public/629/9c2/482/6299c2482b64c523421235.png"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            class="object-scale-down w-[120px] h-[100px] md:h-[100px] md:w-[220px]"
+          />
+        </div>
+        <div>
+          <img
+            src="https://jtexpress.vn/storage/app/uploads/public/629/9e4/4a9/6299e44a9aae4450398133.png"
+            alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            class="object-scale-down w-[120px] h-[100px] md:h-[100px] md:w-[220px]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div class="fixed right-[24px] bottom-[10%] z-50">
+      <div
+        class="flex items center justify-center flex-col gap-y-[5px] w-[60px]"
+      >
+        <div class="append-chat-plusion relative w-full h-full">
+          <div
+            class="cursor-pointer flex flex-col items-center justify-center text-[#5D6A7A] text-[14px] font-bold mb-2.5"
+          >
+            <img
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/icon-chat.png"
+              class="object-scale-down flex items-center justify-center w-full h-[60px] bg-[#FF0000] rounded-full"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            />
+          </div>
+        </div>
+        <div
+          class="cursor-pointer flex flex-col items-center justify-center text-[#5D6A7A] text-[14px] font-bold"
+        >
+          <a
+            href="tel:19001088"
+            class="flex items-center justify-center w-full h-[60px] bg-[#FF0000] rounded-full"
+          >
+            <img
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/phone.png"
+              class="w-[28px] h-[26px] object-scale-down"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            />
+          </a>
+        </div>
+      </div>
     </div>
 
-    <section class="h-screen"></section>
+    <div
+      class="z-50 to-top rounded-[2px] border border-[#454F5B] cursor-pointer fixed right-[24px] bg-white w-[50px] h-[50px] bottom-[2%] z-50 bg-white"
+    >
+      <div class="leading-[55px] text-center">
+        <ion-icon
+          class="text-[18px] md hydrated"
+          name="chevron-up-outline"
+          role="img"
+          aria-label="chevron up outline"
+        ></ion-icon>
+      </div>
+    </div>
 
     <footer id="layout-footer">
       <footer class="bg-[#E0E3E7]">
@@ -1038,28 +2786,28 @@
           <a href="#" target="_blank">
             <img
               src="https://jtexpress.vn/themes/jtexpress/assets/images/facebook-h.png"
-              alt="J&amp;T Express - Giao hàng Chuyển phát nhanh"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
               class=""
             />
           </a>
           <a href="#" target="_blank">
             <img
               src="https://jtexpress.vn/themes/jtexpress/assets/images/instagram-h.png"
-              alt="J&amp;T Express - Giao hàng Chuyển phát nhanh"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
               class=""
             />
           </a>
           <a href="#" target="_blank">
             <img
               src="https://jtexpress.vn/themes/jtexpress/assets/images/titok-h.png"
-              alt="J&amp;T Express - Giao hàng Chuyển phát nhanh"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
               class=""
             />
           </a>
           <a href="#" target="_blank">
             <img
               src="https://jtexpress.vn/themes/jtexpress/assets/images/ytb-h.png"
-              alt="J&amp;T Express - Giao hàng Chuyển phát nhanh"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
               class=""
             />
           </a>
@@ -1067,7 +2815,7 @@
           <a href="#" target="_blank">
             <img
               src="https://jtexpress.vn/themes/jtexpress/assets/images/zing-h.png"
-              alt="J&amp;T Express - Giao hàng Chuyển phát nhanh"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
               class=""
             />
           </a>
@@ -1097,5 +2845,111 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Jquery -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- Slider slick -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".my-slider").slick({
+          slideToShow: 1,
+          slideToScroll: 1,
+          fade: true,
+          cssEase: "linear",
+          autoplay: true,
+          autoplaySpeed: 2000,
+          speed: 500,
+          dots: true,
+          arrows: false,
+        });
+      });
+
+      $(".autoplay").slick({
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000,
+        autoplay: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              autoplay: true,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+            },
+          },
+        ],
+      });
+
+      $(".my-partners-slick").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+        ],
+      });
+
+      var toTop = $(".to-top");
+      let global = $("#layout-header").offset().top;
+
+      toTop.on("click", function () {
+        $("html, body").animate(
+          {
+            scrollTop: $("html, body").offset().top,
+          },
+          "5000"
+        );
+      });
+
+      toTop.hide();
+      $(document).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+          toTop.show();
+        } else {
+          toTop.hide();
+        }
+      });
+    </script>
+
+    <!-- Select 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>
