@@ -1,0 +1,316 @@
+.about_us__shadow {
+  box-shadow: 0px 4px 10px rgba(162, 175, 184, 0.5);
+}
+
+#thai_lan {
+  position: absolute;
+  left: 630px;
+  top: 290px;
+}
+
+#campodia {
+  position: absolute;
+  left: 630px;
+  top: 390px;
+}
+
+#malaysia {
+  position: absolute;
+  left: 630px;
+  top: 495px;
+}
+
+#vietnam {
+  position: absolute;
+  left: 790px;
+  top: 290px;
+}
+#asian {
+  position: absolute;
+  left: 910px;
+  top: 120px;
+}
+
+#singapore {
+  position: absolute;
+  left: 790px;
+  top: 390px;
+}
+#philippines {
+  position: absolute;
+  left: 980px;
+  top: 290px;
+}
+#indonesia {
+  position: absolute;
+  left: 960px;
+  top: 490px;
+}
+
+#uae {
+  position: absolute;
+  left: 500px;
+  top: 218px;
+}
+#saudi {
+  position: absolute;
+  left: 602px;
+  top: 152px;
+}
+#mex {
+  position: absolute;
+  left: 437px;
+  top: 128px;
+}
+
+#label,
+#thai_lan::before,
+#campodia::before,
+#malaysia::before,
+#vietnam::before,
+#singapore::before,
+#philippines::before,
+#indonesia::before,
+#uae::before,
+#saudi::before,
+#mex::before {
+  position: absolute;
+  left: 53.5%;
+  top: -15px;
+  transform: translateX(-50%);
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#thai_lan::after,
+#campodia::after,
+#malaysia::after,
+#vietnam::after,
+#singapore::after,
+#philippines::after,
+#indonesia::after,
+#uae::after,
+#saudi::after,
+#mex::after {
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  transform: translateX(-50%);
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: pingAtDotMap 1s ease-out infinite;
+}
+
+@keyframes pingAtDotMap {
+  from {
+    transform: scale(1);
+    background: red;
+    opacity: 1;
+  }
+  to {
+    background: white;
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+#campodia::after,
+#vietnam::after,
+#indonesia::after,
+#uae::after {
+  animation-delay: 1.5s;
+}
+
+@media only screen and (max-width: 1280px) {
+  #thai_lan {
+    position: absolute;
+    left: 400px;
+    top: 475px;
+  }
+
+  #campodia {
+    position: absolute;
+    left: 400px;
+    top: 600px;
+  }
+
+  #malaysia {
+    position: absolute;
+    left: 400px;
+    top: 700px;
+  }
+
+  #vietnam {
+    position: absolute;
+    left: 535px;
+    top: 475px;
+  }
+  #asian {
+    position: absolute;
+    left: 750px;
+    top: 300px;
+  }
+
+  #singapore {
+    position: absolute;
+    left: 535px;
+    top: 600px;
+  }
+  #philippines {
+    position: absolute;
+    left: 710px;
+    top: 475px;
+  }
+  #indonesia {
+    position: absolute;
+    left: 730px;
+    top: 700px;
+  }
+  #uae {
+    position: absolute;
+    left: 278px;
+    top: 405px;
+  }
+  #saudi {
+    position: absolute;
+    left: 372px;
+    top: 335px;
+  }
+  #mex {
+    position: absolute;
+    left: 200px;
+    top: 315px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #thai_lan {
+    position: absolute;
+    left: 230px;
+    top: 450px;
+  }
+
+  #campodia {
+    position: absolute;
+    left: 230px;
+    top: 580px;
+  }
+
+  #malaysia {
+    position: absolute;
+    left: 230px;
+    top: 700px;
+  }
+
+  #vietnam {
+    position: absolute;
+    left: 400px;
+    top: 450px;
+  }
+  #asian {
+    position: absolute;
+    left: 552px;
+    top: 330px;
+  }
+
+  #singapore {
+    position: absolute;
+    left: 400px;
+    top: 580px;
+  }
+  #philippines {
+    position: absolute;
+    left: 550px;
+    top: 450px;
+  }
+  #indonesia {
+    position: absolute;
+    left: 552px;
+    top: 700px;
+  }
+
+  #uae {
+    position: absolute;
+    left: 100px;
+    top: 400px;
+  }
+  #saudi {
+    position: absolute;
+    left: 210px;
+    top: 335px;
+  }
+  #mex {
+    position: absolute;
+    left: 50px;
+    top: 314px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #thai_lan {
+    position: absolute;
+    left: 0px;
+    top: 550px;
+  }
+
+  #campodia {
+    position: absolute;
+    left: 20px;
+    top: 650px;
+  }
+
+  #malaysia {
+    position: absolute;
+    left: 0px;
+    top: 750px;
+  }
+
+  #vietnam {
+    position: absolute;
+    left: 110px;
+    top: 550px;
+  }
+  #asian {
+    position: absolute;
+    left: 200px;
+    top: 450px;
+  }
+
+  #singapore {
+    position: absolute;
+    left: 160px;
+    top: 650px;
+  }
+  #philippines {
+    position: absolute;
+    left: 240px;
+    top: 550px;
+  }
+  #indonesia {
+    position: absolute;
+    left: 240px;
+    top: 790px;
+  }
+
+  #uae {
+    position: absolute;
+    left: 60px;
+    top: 482px;
+  }
+  #saudi {
+    position: absolute;
+    left: 171px;
+    top: 399px;
+  }
+  #mex {
+    position: absolute;
+    left: 20px;
+    top: 413px;
+  }
+}

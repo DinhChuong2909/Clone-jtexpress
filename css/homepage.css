@@ -111,6 +111,15 @@ svg {
   transition: opacity 1s ease-out;
 }
 
+#menu{
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  background:white;
+  height: 97px;
+}
+
 .tab-active {
   opacity: 1;
   display: block;
