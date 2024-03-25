@@ -1,0 +1,49 @@
+.tabs-header {
+  height: 53px;
+  overflow-y: hidden;
+  padding-top: 5px;
+}
+
+.tabs-header > .tab-title {
+  min-width: 180px;
+  height:100%;
+  line-height: 53px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #000000;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  margin-right: 12px;
+  cursor: pointer;
+  color: #161d25;
+}
+
+.tabs-header > .tab-tracking-title-active {
+  background: #ffffff;
+  color: #FF0000;
+
+  border-bottom: unset;
+  position: relative;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  z-index: 5;
+  font-weight: 700;
+}
+
+.tabs_inside_title > div {
+  margin-right: 25px;
+  /* color: #8998ac; */
+  height: 30px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.tabs_inside_title__active{
+  font-weight: 700;
+  color: #161D25;
+  font-size: 18px;
+  border-bottom:3px solid #EB5757;
+}
+
+.my-custom-full-w {
+  width: 100%;
+  display: block !important;
+  transition: all .2s ease-in-out;
+}

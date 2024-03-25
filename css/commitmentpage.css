@@ -1,0 +1,91 @@
+.camket1 > .camket_content {
+  position: relative;
+}
+
+.camket1 > .camket_content::before {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  top: -25px;
+  height: 120px;
+  width: 120px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-image: url(../images/01.png);
+}
+
+.camket2 > .camket_content {
+  position: relative;
+}
+
+.camket2 > .camket_content::before {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  top: -25px;
+  height: 120px;
+  width: 140px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-image: url(../images/02.png);
+}
+.camket3 > .camket_content {
+  position: relative;
+}
+
+.camket3 > .camket_content::before {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  top: -25px;
+  height: 120px;
+  width: 130px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-image: url(../images/03.png);
+}
+.camket4 > .camket_content {
+  position: relative;
+}
+
+.camket4 > .camket_content::before {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  top: -25px;
+  height: 120px;
+  width: 130px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-image: url(../images/04.png);
+}
+.camket5 > .camket_content {
+  position: relative;
+}
+
+.camket5 > .camket_content::before {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  top: -25px;
+  height: 120px;
+  width: 140px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-image: url(../images/05.png);
+}
+.camket6 > .camket_content {
+  position: relative;
+}
+
+.camket6 > .camket_content::before {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  top: -25px;
+  height: 120px;
+  width: 140px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-image: url(../images/06.png);
+}

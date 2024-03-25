@@ -1,0 +1,15 @@
+.common_table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px #e0e0e0;
+  overflow: hidden;
+}
+
+.common_table td,
+.common_table th {
+  border: 1px solid #E0E0E0;
+  padding: 8px;
+  font-size: 14px;
+}
