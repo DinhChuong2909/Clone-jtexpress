@@ -1,0 +1,2364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/homepage.css" />
+    <link rel="stylesheet" href="../css/standardpage.css" />
+    <link rel="stylesheet" href="../css/recruitmentpage.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <title>J&T Express - Trang chủ</title>
+  </head>
+  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <header id="layout-header">
+      <header id="menu">
+        <div class="n4msama-nav transition-shadow shadow-lg">
+          <div class="bg-[#161D25] h-[32px] flex items-center">
+            <div
+              class="h-full flex items-center md:mx-auto text-[#FFFFFF] text-[12px] justify-between w-full md:container"
+            >
+              <span class="hidden sm:hidden md:block md:w-[180px]">
+                Copyright @J&T Express
+              </span>
+              <div
+                class="h-full search_box w-full flex items-center justify-between sm:justify-between md:justify-end md:px-0 px-4"
+              >
+                <div class="flex items-center gap-x-[15px]">
+                  <span
+                    value_hashtag="#J&T Express"
+                    class="ml-3 cursor-pointer"
+                  >
+                    #J&T Express
+                  </span>
+                  <span value_hashtag="#Promotion" class="ml-3 cursor-pointer">
+                    #Promotion
+                  </span>
+                </div>
+
+                <form class="form-inline" method="GET" action="">
+                  <div
+                    class="flex items-center rounded-[15px] border px-2 ml-4 h-[20px lg:w-auto"
+                  >
+                    <button type="submit" class="flex">
+                      <svg
+                        width="12"
+                        height="12"
+                        class="DocSearch-Search-Icon"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                          stroke="currentColor"
+                          fill="none"
+                          fill-rule="evenodd"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </button>
+                    <input
+                      value=""
+                      class="form-control-navbar bg-transparent focus:outline-none ml-2 placeholder-white"
+                      placeholder="Search"
+                      type="text"
+                      name="search"
+                    />
+                  </div>
+                </form>
+
+                <div class="ml-3 z-10 hidden lg:block">
+                  <div class="relative hidden lg:block">
+                    <button
+                      class="relative flex items-center focus:outline-none"
+                      type="button"
+                      onclick="openLanguageDropdown_lg()"
+                    >
+                      <span class="mr-1 text-[16px] uppercase">vi</span>
+                      <svg
+                        width="14"
+                        height="14"
+                        class="fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <div
+                      class="absolute right-0 bg-white rounded-md shadow-xl border"
+                      style="display: none"
+                      id="language-dropdown-lg"
+                    >
+                      <a
+                        class="uppercase block px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                        href="#"
+                      >
+                        en
+                      </a>
+                      <a
+                        class="uppercase block px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                        href="#"
+                      >
+                        vi
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav
+            class="px-4 lg:px-0 flex items-center justify-between mx-auto h-[65px] container"
+          >
+            <div class="menu-on-mobile lg:hidden w-[44px]">
+              <ion-icon
+                onclick="openMenu()"
+                class="block lg:hidden text-3xl md hydrated"
+                name="menu-outline"
+                role="img"
+                aria-label="menu outline"
+              >
+                <div class="icon-inner">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon s-ion-icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <title>Menu</title>
+                    <path
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M80 160h352M80 256h352M80 352h352"
+                      class="ionicon-fill-none ionicon-stroke-width"
+                    ></path>
+                  </svg>
+                </div>
+              </ion-icon>
+
+              <div class="w-full">
+                <div class="menu-mobile-body z-20" id="menu-mobile">
+                  <div class="text-[13px] font-medium pt-5">
+                    <!-- Trang chủ -->
+                    <div class="px-4 py-3">
+                      <a
+                        href="./homepage.html"
+                        target="_self"
+                        class="inline-flex items-center cursor-pointer"
+                      >
+                        Trang chủ
+                      </a>
+                    </div>
+                    <!-- Giới thiệu -->
+                    <div class="px-4 py-3" onclick="toggleBackground(this)">
+                      <div
+                        class="flex items-center justify-between"
+                        onclick="changeIconDropdown(this)"
+                      >
+                        Giới thiệu
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          role="img"
+                          class="md hydrated"
+                          aria-label="chevron forward outline"
+                        ></ion-icon>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./aboutpage.html"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Về chúng tôi
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./commitmentpage.html"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Cam kết
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Tra cứu -->
+                    <div class="px-4 py-3" onclick="toggleBackground(this)">
+                      <div
+                        class="flex items-center justify-between"
+                        onclick="changeIconDropdown(this)"
+                      >
+                        Tra cứu
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          role="img"
+                          class="md hydrated"
+                          aria-label="chevron forward outline"
+                        ></ion-icon>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./trackingpage.html?type=tariff"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Cước vận chuyển
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="././trackingpage.html?type=office-point"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Bưu cục gần đây
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="././trackingpage.html?type=track"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Vận đơn
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="././trackingpage.html?type=price-list"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Bảng giá
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./trackingpage.html?type=prohibited-goods"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Hàng từ chối vận chuyển
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./goodsPackagepage.html"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Quy cách đóng gói hàng hoá
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Dịch vụ -->
+                    <div class="px-4 py-3" onclick="toggleBackground(this)">
+                      <div
+                        class="flex items-center justify-between"
+                        onclick="changeIconDropdown(this)"
+                      >
+                        Dịch vụ
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          role="img"
+                          class="md hydrated"
+                          aria-label="chevron forward outline"
+                        ></ion-icon>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./standardpage.html"
+                            target="_self"
+                            class="flex flex-col"
+                          >
+                            <span clas="mb-1">
+                              Dịch vụ Chuyển phát tiêu chuẩn
+                            </span>
+                            <span class="font-bold text-[#D60009] italic">
+                              J&T Express
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./fastpage.html"
+                            target="_self"
+                            class="flex flex-col"
+                          >
+                            <span clas="mb-1"> Dịch vụ nhanh </span>
+                            <span class="font-bold text-[#D60009] italic">
+                              J&T Fast
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./superpage.html"
+                            target="_self"
+                            class="flex flex-col"
+                          >
+                            <span clas="mb-1"> Siêu dịch vụ giao hàng </span>
+                            <span class="font-bold text-[#D60009] italic">
+                              J&T Super
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./internationalpage.html"
+                            target="_self"
+                            class="flex flex-col"
+                          >
+                            <span clas="mb-1"> Tuyến vận chuyển quốc tế </span>
+                            <span class="font-bold text-[#D60009] italic">
+                              J&T International
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./freshpage.html"
+                            target="_self"
+                            class="flex flex-col"
+                          >
+                            <span clas="mb-1"> Dịch vụ tươi sống </span>
+                            <span class="font-bold text-[#D60009] italic">
+                              J&T Fresh
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Tuyển dụng -->
+                    <div class="px-4 py-3" onclick="toggleBackground(this)">
+                      <div
+                        class="flex items-center justify-between"
+                        onclick="changeIconDropdown(this)"
+                      >
+                        Tuyển dụng
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          role="img"
+                          class="md hydrated"
+                          aria-label="chevron forward outline"
+                        ></ion-icon>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./recruitmentpage.html"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Cơ hội nghề nghiệp (tìm kiếm, ứng tuyển)
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./lifepage.html"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Cuộc sống J&T Express
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Blog -->
+                    <div class="px-4 py-3" onclick="toggleBackground(this)">
+                      <div
+                        class="flex items-center justify-between"
+                        onclick="changeIconDropdown(this)"
+                      >
+                        Blog
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          role="img"
+                          class="md hydrated"
+                          aria-label="chevron forward outline"
+                        ></ion-icon>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./magazinepage.html"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            J-Magazine
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./newspage.html"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Tin tức nổi bật
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Tư vấn -->
+                    <div class="px-4 py-3" onclick="toggleBackground(this)">
+                      <div
+                        class="flex items-center justify-between"
+                        onclick="changeIconDropdown(this)"
+                      >
+                        Tư vấn
+                        <ion-icon
+                          name="chevron-forward-outline"
+                          role="img"
+                          class="md hydrated"
+                          aria-label="chevron forward outline"
+                        ></ion-icon>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./contactpage.html"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Liên hệ
+                          </a>
+                        </div>
+                      </div>
+                      <div id="dropdown" style="display: none">
+                        <div class="py-3 pl-2 border-t border-[#FFE3E7]">
+                          <a
+                            href="./consultantpage.html"
+                            target="_self"
+                            class="inline-flex items-center cursor-pointer"
+                          >
+                            Đăng ký tư vấn
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-screen h-screen opacity-0 absolute top-0 left-0"
+                  style="display: none"
+                  id="menu-overlay"
+                  onclick="openMenu()"
+                ></div>
+              </div>
+            </div>
+
+            <a onclick="window.location='./homepage.html'">
+              <img
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/logo.svg"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              />
+            </a>
+            <ul
+              class="hidden lg:flex desktop-nav items-center list-none text-[#5D6A7A] text-[14px] list-none"
+            >
+              <!-- Trang chủ -->
+              <li class="ml-5 flex items-center">
+                <a
+                  class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer"
+                  href="./homepage.html"
+                  target="_self"
+                >
+                  Trang chủ
+                </a>
+              </li>
+              <!-- Giới thiệu -->
+              <li class="dropdown ml-5 flex items-center">
+                <div class="dropdown inline-block relative">
+                  <a
+                    class="flex items-center transition-colors cursor-pointer"
+                    href="./aboutpage.html"
+                    target="_self"
+                  >
+                    Giới thiệu
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <ul
+                    class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
+                  >
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./aboutpage.html"
+                        target="_self"
+                      >
+                        Về chúng tôi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./commitmentpage.html"
+                        target="_self"
+                      >
+                        Cam kết
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Tra cứu -->
+              <li class="dropdown ml-5 flex items-center">
+                <div class="dropdown inline-block relative">
+                  <a
+                    class="flex items-center transition-colors cursor-pointer"
+                    href="./trackingpage.html?type=tariff"
+                    target="_self"
+                  >
+                    Tra cứu
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <ul
+                    class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
+                  >
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./trackingpage.html?type=tariff"
+                        target="_self"
+                      >
+                        Cước vận chuyển
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="././trackingpage.html?type=office-point"
+                        target="_self"
+                      >
+                        Bưu cục gần đây
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="././trackingpage.html?type=track"
+                        target="_self"
+                      >
+                        Vận đơn
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="././trackingpage.html?type=price-list"
+                        target="_self"
+                      >
+                        Bảng giá
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./trackingpage.html?type=prohibited-goods"
+                        target="_self"
+                      >
+                        Hàng từ chối vận chuyển
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./goodsPackagepage.html"
+                        target="_self"
+                      >
+                        Quý cách đóng gói hàng hoá
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Dịch vụ -->
+              <li class="dropdown ml-5 flex items-center">
+                <div class="dropdown inline-block relative">
+                  <a
+                    class="flex items-center transition-colors cursor-pointer"
+                    href="./service.html"
+                    target="_self"
+                  >
+                    Dịch vụ
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <ul
+                    class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
+                  >
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./standardpage.html"
+                        target="_self"
+                      >
+                        <span> Dịch vụ chuyển phát tiêu chuẩn </span>
+                        <span class="font-bold italic text-[#D60009]">
+                          J&T Express
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./fastpage.html"
+                        target="_self"
+                      >
+                        <span> Dịch vụ nhanh </span>
+                        <span class="font-bold italic text-[#D60009]">
+                          J&T Fast
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./superpage.html"
+                        target="_self"
+                      >
+                        <span> Siêu dịch vụ giao hàng </span>
+                        <span class="font-bold italic text-[#D60009]">
+                          J&T Supper
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./internationalpage.html"
+                        target="_self"
+                      >
+                        <span> Tuyến vận chuyển quốc tế </span>
+                        <span class="font-bold italic text-[#D60009]">
+                          J&T International
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./freshpage.html"
+                        target="_self"
+                      >
+                        <span> Dịch vụ tươi sống </span>
+                        <span class="font-bold italic text-[#D60009]">
+                          J&T Fresh
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Tuyển dụng -->
+              <li class="dropdown ml-5 flex items-center text-red-500">
+                <div class="dropdown inline-block relative">
+                  <a
+                    class="flex items-center transition-colors cursor-pointer"
+                    href="./recruitmentpage.html"
+                    target="_self"
+                  >
+                    Tuyển dụng
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <ul
+                    class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
+                  >
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./recruitmentpage.html"
+                        target="_self"
+                      >
+                        Cơ hội nghề nghiệp (tìm kiếm, ứng tuyển)
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./lifepage.html"
+                        target="_self"
+                      >
+                        Cuộc sống J&T Express
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Blog -->
+              <li class="dropdown ml-5 flex items-center">
+                <div class="dropdown inline-block relative">
+                  <a
+                    class="flex items-center transition-colors cursor-pointer"
+                    href="./magazinepage.html"
+                    target="_self"
+                  >
+                    Blog
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <ul
+                    class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
+                  >
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./magazinepage.html"
+                        target="_self"
+                      >
+                        J-Magazine
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./newspage.html"
+                        target="_self"
+                      >
+                        Tin tức nổi bật
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Tư vấn -->
+              <li class="dropdown ml-5 flex items-center">
+                <div class="dropdown inline-block relative">
+                  <a
+                    class="flex items-center transition-colors cursor-pointer"
+                    href="./contactpage.html"
+                    target="_self"
+                  >
+                    Tư vấn
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <ul
+                    class="hidden dropdown-menu absolute w-max text-[#5D6A7A] z-10 bg-[#FFFFFF] rounded-[10px] border normal-case list-none"
+                  >
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./contactpage.html"
+                        target="_self"
+                      >
+                        Liên hệ
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="flex flex-col rounded-[10px] hover:bg-[#F5F5F5] transition-colors px-4 py-2 cursor-pointer w-auto ios-res"
+                        href="./consultantpage.html"
+                        target="_self"
+                      >
+                        Đăng ký tư vấn
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="lg:hidden block">
+              <div class="relative my-32">
+                <button
+                  class="relative flex items-center focus:outline-none"
+                  onclick="openLanguageDropdown()"
+                >
+                  <span class="mr-1 text-[16px] uppercase">vi</span>
+                  <ion-icon
+                    name="chevron-down-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="chevron down outline"
+                  ></ion-icon>
+                </button>
+                <div
+                  class="fixed inset-0 h-full w-full z-10"
+                  style="display: none"
+                  id="language-overlay"
+                  onclick="openLanguageDropdown()"
+                ></div>
+                <div
+                  class="absolute right-0 bg-white rounded-md shadow-xl z-20 border"
+                  style="display: none"
+                  id="language-dropdown"
+                >
+                  <a
+                    class="block uppercase px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                    href="#"
+                  >
+                    en
+                  </a>
+                  <a
+                    class="block uppercase px-4 py-2 text-sm text-gray-700 cursor-pointer"
+                    href="#"
+                  >
+                    vi
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </header>
+
+    <div class="h-[97px]"></div>
+
+    <section id="layout-content">
+      <div class="relative h-full">
+        <img
+          src="https://jtexpress.vn/storage/app/uploads/public/626/a5c/e89/626a5ce894adc468445492.png"
+          class="w-full h-full object-cover"
+          alt="J&T Express Việt Nam - Tuyển dụng"
+        />
+        <div
+          class="absolute bottom-[-113px] left-1/2 translate-x-[-50%] hidden lg:block"
+        >
+          <div
+            class="filter_in_recruitment gap-x-[20px] w-[95%] xl:w-full mx-auto bg-white rounded-[10px] p-8 hidden lg:flex items-end justify-evenly my-5 xl:my-0"
+          >
+            <div class="w-[350px]">
+              <span class="text-[#161D25] block mb-[8px]">
+                Vị trí ứng tuyển
+              </span>
+              <div class="flex items-center border border-[#ced4da] w-full">
+                <input
+                  value=""
+                  name="recruitment"
+                  class="bg-transparent focus:outline-none ml-2 w-full h-[43px]"
+                  placeholder="Nhập vị trí ứng tuyển"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="w-[230px]">
+              <span class="text-[#161D25] block mb-[8px]"
+                >Địa điểm làm việc
+              </span>
+              <div class="select2-stupid w-full h-[45px]">
+                <select
+                  name="province"
+                  class="search-select w-full h-full select2-hidden-accessible"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  data-select2-id="select2-data-47-z0hf"
+                >
+                  <option value="" data-select2-id="select2-data-49-w9nm">
+                    Tỉnh/ Thành phố
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Thành phố Cần Thơ"
+                    data-select2-id="select2-data-196-bpll"
+                  >
+                    Thành phố Cần Thơ
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Thành phố Hà Nội"
+                    data-select2-id="select2-data-197-a6e6"
+                  >
+                    Thành phố Hà Nội
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Thành phố Hồ Chí Minh"
+                    data-select2-id="select2-data-198-b0hv"
+                  >
+                    Thành phố Hồ Chí Minh
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Tỉnh Bắc Ninh"
+                    data-select2-id="select2-data-199-5o0g"
+                  >
+                    Tỉnh Bắc Ninh
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Tỉnh Đắk Lắk"
+                    data-select2-id="select2-data-200-vv5s"
+                  >
+                    Tỉnh Đắk Lắk
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Tỉnh Đồng Nai"
+                    data-select2-id="select2-data-201-uulf"
+                  >
+                    Tỉnh Đồng Nai
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Tỉnh Nghệ An"
+                    data-select2-id="select2-data-202-urwv"
+                  >
+                    Tỉnh Nghệ An
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Tỉnh Phú Thọ"
+                    data-select2-id="select2-data-203-cslq"
+                  >
+                    Tỉnh Phú Thọ
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Tỉnh Thái Nguyên"
+                    data-select2-id="select2-data-204-rsa8"
+                  >
+                    Tỉnh Thái Nguyên
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Tỉnh Vĩnh Long"
+                    data-select2-id="select2-data-205-xo4d"
+                  >
+                    Tỉnh Vĩnh Long
+                  </option></select
+                ><span
+                  class="select2 select2-container select2-container--material select2-container--above"
+                  dir="ltr"
+                  data-select2-id="select2-data-48-wjwh"
+                  style="width: 230px"
+                  ><span class="selection"
+                    ><span
+                      class="select2-selection select2-selection--single"
+                      role="combobox"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      tabindex="0"
+                      aria-disabled="false"
+                      aria-labelledby="select2-province-2d-container"
+                      aria-controls="select2-province-2d-container"
+                      ><span
+                        class="select2-selection__arrow"
+                        role="presentation"
+                        ><b role="presentation"></b></span></span></span
+                  ><span class="dropdown-wrapper" aria-hidden="true"></span
+                ></span>
+              </div>
+            </div>
+            <div class="w-[230px]">
+              <span class="text-[#161D25] block mb-[8px]"> Ngành nghề </span>
+              <div class="select2-stupid w-full h-[45px]">
+                <select
+                  name="career"
+                  class="search-select w-full h-full select2-hidden-accessible"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  data-select2-id="select2-data-65-eibr"
+                >
+                  <option value="" data-select2-id="select2-data-67-cibn">
+                    Ngành nghề
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Bưu Cục"
+                    data-select2-id="select2-data-210-i5dn"
+                  >
+                    Bưu Cục
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Chăm Sóc Khách Hàng"
+                    data-select2-id="select2-data-211-98iz"
+                  >
+                    Chăm Sóc Khách Hàng
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Công Nghệ Thông Tin"
+                    data-select2-id="select2-data-212-9x9d"
+                  >
+                    Công Nghệ Thông Tin
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Đào tạo"
+                    data-select2-id="select2-data-213-6o8n"
+                  >
+                    Đào tạo
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Kế toán - Tài chính"
+                    data-select2-id="select2-data-214-p3nh"
+                  >
+                    Kế toán - Tài chính
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Kiểm toán &amp; Kiểm soát nội bộ"
+                    data-select2-id="select2-data-215-kx3s"
+                  >
+                    Kiểm toán &amp; Kiểm soát nội bộ
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Kinh doanh"
+                    data-select2-id="select2-data-216-kobk"
+                  >
+                    Kinh doanh
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Marketing"
+                    data-select2-id="select2-data-217-6163"
+                  >
+                    Marketing
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Nhân sự &amp; Hành chính"
+                    data-select2-id="select2-data-218-plof"
+                  >
+                    Nhân sự &amp; Hành chính
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Pháp lý"
+                    data-select2-id="select2-data-219-ig39"
+                  >
+                    Pháp lý
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Quản lý chất lượng"
+                    data-select2-id="select2-data-220-vr7w"
+                  >
+                    Quản lý chất lượng
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Thu mua"
+                    data-select2-id="select2-data-221-atji"
+                  >
+                    Thu mua
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Trợ lí"
+                    data-select2-id="select2-data-222-z2w7"
+                  >
+                    Trợ lí
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Trung tâm khai thác"
+                    data-select2-id="select2-data-223-eip5"
+                  >
+                    Trung tâm khai thác
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Vận hành"
+                    data-select2-id="select2-data-224-i1tf"
+                  >
+                    Vận hành
+                  </option></select
+                ><span
+                  class="select2 select2-container select2-container--material select2-container--above"
+                  dir="ltr"
+                  data-select2-id="select2-data-66-4fhk"
+                  style="width: 230px"
+                  ><span class="selection"
+                    ><span
+                      class="select2-selection select2-selection--single"
+                      role="combobox"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      tabindex="0"
+                      aria-disabled="false"
+                      aria-labelledby="select2-career-yd-container"
+                      aria-controls="select2-career-yd-container"
+                      ><span
+                        class="select2-selection__arrow"
+                        role="presentation"
+                        ><b role="presentation"></b></span></span></span
+                  ><span class="dropdown-wrapper" aria-hidden="true"></span
+                ></span>
+              </div>
+            </div>
+            <div class="w-[230px]">
+              <span class="text-[#161D25] block mb-[8px]"> Chức vụ </span>
+              <div class="select2-stupid w-full h-[45px]">
+                <select
+                  name="position"
+                  class="search-select w-full h-full select2-hidden-accessible"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  data-select2-id="select2-data-73-sb1v"
+                >
+                  <option value="" data-select2-id="select2-data-75-pfp2">
+                    Chức vụ
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Chuyên viên"
+                    data-select2-id="select2-data-227-ec88"
+                  >
+                    Chuyên viên
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Nhân viên"
+                    data-select2-id="select2-data-228-hyli"
+                  >
+                    Nhân viên
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Thực tập sinh"
+                    data-select2-id="select2-data-229-p99e"
+                  >
+                    Thực tập sinh
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Trưởng nhóm"
+                    data-select2-id="select2-data-230-wyk4"
+                  >
+                    Trưởng nhóm
+                  </option>
+                  <option
+                    class="text-[#161D25]"
+                    value="Trưởng phòng"
+                    data-select2-id="select2-data-231-yig4"
+                  >
+                    Trưởng phòng
+                  </option></select
+                ><span
+                  class="select2 select2-container select2-container--material select2-container--above"
+                  dir="ltr"
+                  data-select2-id="select2-data-74-3sat"
+                  style="width: 230px"
+                  ><span class="selection"
+                    ><span
+                      class="select2-selection select2-selection--single"
+                      role="combobox"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      tabindex="0"
+                      aria-disabled="false"
+                      aria-labelledby="select2-position-qt-container"
+                      aria-controls="select2-position-qt-container"
+                      ><span
+                        class="select2-selection__arrow"
+                        role="presentation"
+                        ><b role="presentation"></b></span></span></span
+                  ><span class="dropdown-wrapper" aria-hidden="true"></span
+                ></span>
+              </div>
+            </div>
+            <div class="w-[230px]">
+              <button
+                class="flex items-center justify-center h-[45px] w-[180px] bg-[#FF0000] rounded-[2px] text-white font-semibold"
+              >
+                <ion-icon
+                  class="text-xl md hydrated"
+                  name="search-outline"
+                  role="img"
+                  aria-label="search outline"
+                ></ion-icon>
+                <span class="ml-2">Tìm kiếm</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:container mx-auto jobs_column px-4 lg:px-0 breack-3">
+        <div>
+          <div class="flex items-center">
+            <span class="font-bold lg:text-[32px] text-[24px]">
+              Việc làm nổi bật
+            </span>
+            <div
+              class="ml-6 flex items-center bg-[#FF0000] rounded-[99px] text-white py-[4px] px-4"
+            >
+              <ion-icon
+                name="star"
+                role="img"
+                class="md hydrated"
+                aria-label="star"
+              ></ion-icon>
+              <span class="font-bold mx-1 text-[12px]"> HOT </span>
+              <ion-icon
+                name="star"
+                role="img"
+                class="md hydrated"
+                aria-label="star"
+              ></ion-icon>
+            </div>
+          </div>
+          <div class="job-content">
+            <div
+              class="flex items-end lg:items-center justify-between mt-4 job-detail"
+            >
+              <div>
+                <span
+                  class="description-with-1-line font-bold text-[16px] lg:text-[18px]"
+                >
+                  THỰC TẬP SINH TIẾNG TRUNG
+                </span>
+                <div
+                  class="description-with-1-line flex items-center text-[#5D6A7A] py-2"
+                >
+                  <ion-icon
+                    name="location-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="location outline"
+                  ></ion-icon>
+                  <span class="ml-2"> Quận 2 - Thành phố Hồ Chí Minh </span>
+                </div>
+                <div
+                  class="flex items-center text-[#FF0000] text-[14px] uppercase"
+                >
+                  <ion-icon
+                    name="chevron-forward-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="chevron forward outline"
+                  ></ion-icon>
+                  <a href="#">
+                    <span class="ml-2"> Xem chi tiết </span>
+                  </a>
+                </div>
+              </div>
+              <img
+                class="w-[35px] h-[40px] lg:w-auto lg:h-auto object-cover"
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/number1.png"
+                alt="0"
+              />
+            </div>
+            <div
+              class="flex items-end lg:items-center justify-between mt-4 job-detail"
+            >
+              <div>
+                <span
+                  class="description-with-1-line font-bold text-[16px] lg:text-[18px]"
+                >
+                  NHÂN VIÊN THU MUA
+                </span>
+                <div
+                  class="description-with-1-line flex items-center text-[#5D6A7A] py-2"
+                >
+                  <ion-icon
+                    name="location-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="location outline"
+                  ></ion-icon>
+                  <span class="ml-2"> Quận 2 - Thành phố Hồ Chí Minh </span>
+                </div>
+                <div
+                  class="flex items-center text-[#FF0000] text-[14px] uppercase"
+                >
+                  <ion-icon
+                    name="chevron-forward-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="chevron forward outline"
+                  ></ion-icon>
+                  <a href="#">
+                    <span class="ml-2"> Xem chi tiết </span>
+                  </a>
+                </div>
+              </div>
+              <img
+                class="w-[35px] h-[40px] lg:w-auto lg:h-auto object-cover"
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/number2.png"
+                alt="1"
+              />
+            </div>
+            <div
+              class="flex items-end lg:items-center justify-between mt-4 job-detail"
+            >
+              <div>
+                <span
+                  class="description-with-1-line font-bold text-[16px] lg:text-[18px]"
+                >
+                  [HÀ NỘI]-TRADE MARKETING
+                </span>
+                <div
+                  class="description-with-1-line flex items-center text-[#5D6A7A] py-2"
+                >
+                  <ion-icon
+                    name="location-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="location outline"
+                  ></ion-icon>
+                  <span class="ml-2"> Huyện Mê Linh - Thành phố Hà Nội </span>
+                </div>
+                <div
+                  class="flex items-center text-[#FF0000] text-[14px] uppercase"
+                >
+                  <ion-icon
+                    name="chevron-forward-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="chevron forward outline"
+                  ></ion-icon>
+                  <a href="#">
+                    <span class="ml-2"> Xem chi tiết </span>
+                  </a>
+                </div>
+              </div>
+              <img
+                class="w-[35px] h-[40px] lg:w-auto lg:h-auto object-cover"
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/number3.png"
+                alt="2"
+              />
+            </div>
+            <div
+              class="flex items-end lg:items-center justify-between mt-4 job-detail"
+            >
+              <div>
+                <span
+                  class="description-with-1-line font-bold text-[16px] lg:text-[18px]"
+                >
+                  [HÀ NỘI]-KẾ TOÁN THUẾ
+                </span>
+                <div
+                  class="description-with-1-line flex items-center text-[#5D6A7A] py-2"
+                >
+                  <ion-icon
+                    name="location-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="location outline"
+                  ></ion-icon>
+                  <span class="ml-2"> Huyện Mê Linh - Thành phố Hà Nội </span>
+                </div>
+                <div
+                  class="flex items-center text-[#FF0000] text-[14px] uppercase"
+                >
+                  <ion-icon
+                    name="chevron-forward-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="chevron forward outline"
+                  ></ion-icon>
+                  <a href="#">
+                    <span class="ml-2"> Xem chi tiết </span>
+                  </a>
+                </div>
+              </div>
+              <img
+                class="w-[35px] h-[40px] lg:w-auto lg:h-auto object-cover"
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/number4.png"
+                alt="3"
+              />
+            </div>
+            <div
+              class="flex items-end lg:items-center justify-between mt-4 job-detail"
+            >
+              <div>
+                <span
+                  class="description-with-1-line font-bold text-[16px] lg:text-[18px]"
+                >
+                  [NGHỆ AN] _ CHUYÊN VIÊN C&amp;B
+                </span>
+                <div
+                  class="description-with-1-line flex items-center text-[#5D6A7A] py-2"
+                >
+                  <ion-icon
+                    name="location-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="location outline"
+                  ></ion-icon>
+                  <span class="ml-2"> Huyện Hưng Nguyên - Tỉnh Nghệ An </span>
+                </div>
+                <div
+                  class="flex items-center text-[#FF0000] text-[14px] uppercase"
+                >
+                  <ion-icon
+                    name="chevron-forward-outline"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="chevron forward outline"
+                  ></ion-icon>
+                  <a href="#">
+                    <span class="ml-2"> Xem chi tiết </span>
+                  </a>
+                </div>
+              </div>
+              <img
+                class="w-[35px] h-[40px] lg:w-auto lg:h-auto object-cover"
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/number5.png"
+                alt="4"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center">
+            <span class="text-[24px] lg:text-[32px] font-bold">
+              Việc làm mới
+            </span>
+          </div>
+          <div class="jobs_content">
+            <div>
+              <div class="flex items-start justify-between mt-4 job-detail">
+                <div>
+                  <span class="description-with-1-line font-bold text-[18px]">
+                    NHÂN VIÊN ĐIỀU PHỐI XE
+                  </span>
+                  <div
+                    class="description-with-1-line flex items-center text-[#5D6A7A] my-2"
+                  >
+                    <ion-icon
+                      name="location-outline"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="location outline"
+                    ></ion-icon>
+                    <span class="ml-2"> Quận 2 - Thành phố Hồ Chí Minh </span>
+                  </div>
+                  <div
+                    class="flex items-center text-[#FF0000] text-[14px] uppercase"
+                  >
+                    <ion-icon
+                      name="chevron-forward-outline"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="chevron forward outline"
+                    ></ion-icon>
+                    <a
+                      href="https://jtexpress.vn/tuyen-dung/nhan-vien-dieu-phoi-xe"
+                    >
+                      <span class="ml-2"> Xem chi tiết </span>
+                    </a>
+                  </div>
+                </div>
+                <span
+                  class="font-bold uppercase bg-[#1C8B27] text-[12px] text-white py-[4px] px-4 rounded-[99px]"
+                >
+                  New
+                </span>
+              </div>
+              <div class="flex items-start justify-between mt-4 job-detail">
+                <div>
+                  <span class="description-with-1-line font-bold text-[18px]">
+                    [TRỤ SỞ] - NHÂN VIÊN ĐIỀU PHỐI VẬN TẢI
+                  </span>
+                  <div
+                    class="description-with-1-line flex items-center text-[#5D6A7A] my-2"
+                  >
+                    <ion-icon
+                      name="location-outline"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="location outline"
+                    ></ion-icon>
+                    <span class="ml-2"> Quận 2 - Thành phố Hồ Chí Minh </span>
+                  </div>
+                  <div
+                    class="flex items-center text-[#FF0000] text-[14px] uppercase"
+                  >
+                    <ion-icon
+                      name="chevron-forward-outline"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="chevron forward outline"
+                    ></ion-icon>
+                    <a href="#">
+                      <span class="ml-2"> Xem chi tiết </span>
+                    </a>
+                  </div>
+                </div>
+                <span
+                  class="font-bold uppercase bg-[#1C8B27] text-[12px] text-white py-[4px] px-4 rounded-[99px]"
+                >
+                  New
+                </span>
+              </div>
+              <div class="flex items-start justify-between mt-4 job-detail">
+                <div>
+                  <span class="description-with-1-line font-bold text-[18px]">
+                    [HÀ NỘI]- TRƯỞNG PHÒNG QUẢN LÝ CHẤT LƯỢNG
+                  </span>
+                  <div
+                    class="description-with-1-line flex items-center text-[#5D6A7A] my-2"
+                  >
+                    <ion-icon
+                      name="location-outline"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="location outline"
+                    ></ion-icon>
+                    <span class="ml-2"> Huyện Mê Linh - Thành phố Hà Nội </span>
+                  </div>
+                  <div
+                    class="flex items-center text-[#FF0000] text-[14px] uppercase"
+                  >
+                    <ion-icon
+                      name="chevron-forward-outline"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="chevron forward outline"
+                    ></ion-icon>
+                    <a href="#">
+                      <span class="ml-2"> Xem chi tiết </span>
+                    </a>
+                  </div>
+                </div>
+                <span
+                  class="font-bold uppercase bg-[#1C8B27] text-[12px] text-white py-[4px] px-4 rounded-[99px]"
+                >
+                  New
+                </span>
+              </div>
+              <div class="flex items-start justify-between mt-4 job-detail">
+                <div>
+                  <span class="description-with-1-line font-bold text-[18px]">
+                    [Hà Nội]-Nhân Viên QC
+                  </span>
+                  <div
+                    class="description-with-1-line flex items-center text-[#5D6A7A] my-2"
+                  >
+                    <ion-icon
+                      name="location-outline"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="location outline"
+                    ></ion-icon>
+                    <span class="ml-2"> Huyện Mê Linh - Thành phố Hà Nội </span>
+                  </div>
+                  <div
+                    class="flex items-center text-[#FF0000] text-[14px] uppercase"
+                  >
+                    <ion-icon
+                      name="chevron-forward-outline"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="chevron forward outline"
+                    ></ion-icon>
+                    <a href="#">
+                      <span class="ml-2"> Xem chi tiết </span>
+                    </a>
+                  </div>
+                </div>
+                <span
+                  class="font-bold uppercase bg-[#1C8B27] text-[12px] text-white py-[4px] px-4 rounded-[99px]"
+                >
+                  New
+                </span>
+              </div>
+              <div class="flex items-start justify-between mt-4 job-detail">
+                <div>
+                  <span class="description-with-1-line font-bold text-[18px]">
+                    [Hà Nội] Nhân Viên Chăm Sóc Khách Hàng
+                  </span>
+                  <div
+                    class="description-with-1-line flex items-center text-[#5D6A7A] my-2"
+                  >
+                    <ion-icon
+                      name="location-outline"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="location outline"
+                    ></ion-icon>
+                    <span class="ml-2"> Huyện Mê Linh - Thành phố Hà Nội </span>
+                  </div>
+                  <div
+                    class="flex items-center text-[#FF0000] text-[14px] uppercase"
+                  >
+                    <ion-icon
+                      name="chevron-forward-outline"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="chevron forward outline"
+                    ></ion-icon>
+                    <a href="#">
+                      <span class="ml-2"> Xem chi tiết </span>
+                    </a>
+                  </div>
+                </div>
+                <span
+                  class="font-bold uppercase bg-[#1C8B27] text-[12px] text-white py-[4px] px-4 rounded-[99px]"
+                >
+                  New
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:container mx-auto mb-12 px-4 lg:px-0">
+        <a
+          class="mt-8 mb-10 font-bold uppercase flex items-center text-[#FF0000]"
+        >
+          <ion-icon
+            name="eye-outline"
+            role="img"
+            class="md hydrated"
+            aria-label="eye outline"
+          ></ion-icon>
+          <span class="ml-2 text-[14px]">XEM TẤT CẢ VỊ TRÍ ỨNG TUYỂN</span>
+        </a>
+        <div class="department_block">
+          <div class="office-block">
+            <div>
+              <img
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/khoi-van-phong.png"
+                alt="khoi-van-phong"
+              />
+              <span class="font-bold text-[24px] my-4 inline-block">
+                VĂN PHÒNG
+              </span>
+            </div>
+            <div>
+              <div class="department_block_detail">
+                <div class="flex items-center recruitment_text">
+                  <ion-icon
+                    class="text-[#FF0000] min-w-[20px] recruitment md hydrated"
+                    name="arrow-forward-outline"
+                    role="img"
+                    aria-label="arrow forward outline"
+                  ></ion-icon>
+                  <span class="ml-2 font-bold"> Trung tâm khai thác </span>
+                </div>
+                <span class="pl-6 text-[#8A8E92]"> 1 vị trí đang tuyển </span>
+              </div>
+              <div class="department_block_detail">
+                <div class="flex items-center recruitment_text">
+                  <ion-icon
+                    class="text-[#FF0000] min-w-[20px] recruitment md hydrated"
+                    name="arrow-forward-outline"
+                    role="img"
+                    aria-label="arrow forward outline"
+                  ></ion-icon>
+                  <span class="ml-2 font-bold"> Kế toán - Tài chính </span>
+                </div>
+                <span class="pl-6 text-[#8A8E92]"> 11 vị trí đang tuyển </span>
+              </div>
+              <div class="department_block_detail">
+                <div class="flex items-center recruitment_text">
+                  <ion-icon
+                    class="text-[#FF0000] min-w-[20px] recruitment md hydrated"
+                    name="arrow-forward-outline"
+                    role="img"
+                    aria-label="arrow forward outline"
+                  ></ion-icon>
+                  <span class="ml-2 font-bold"> Nhân sự & Hành chính </span>
+                </div>
+                <span class="pl-6 text-[#8A8E92]"> 5 vị trí đang tuyển </span>
+              </div>
+              <div class="department_block_detail">
+                <div class="flex items-center recruitment_text">
+                  <ion-icon
+                    class="text-[#FF0000] min-w-[20px] recruitment md hydrated"
+                    name="arrow-forward-outline"
+                    role="img"
+                    aria-label="arrow forward outline"
+                  ></ion-icon>
+                  <span class="ml-2 font-bold"> Chăm sóc khách hàng </span>
+                </div>
+                <span class="pl-6 text-[#8A8E92]"> 1 vị trí đang tuyển </span>
+              </div>
+              <div class="department_block_detail">
+                <div class="flex items-center recruitment_text">
+                  <ion-icon
+                    class="text-[#FF0000] min-w-[20px] recruitment md hydrated"
+                    name="arrow-forward-outline"
+                    role="img"
+                    aria-label="arrow forward outline"
+                  ></ion-icon>
+                  <span class="ml-2 font-bold"> Thu mua </span>
+                </div>
+                <span class="pl-6 text-[#8A8E92]"> 5 vị trí đang tuyển </span>
+              </div>
+              <div class="department_block_detail">
+                <div class="flex items-center recruitment_text">
+                  <ion-icon
+                    class="text-[#FF0000] min-w-[20px] recruitment md hydrated"
+                    name="arrow-forward-outline"
+                    role="img"
+                    aria-label="arrow forward outline"
+                  ></ion-icon>
+                  <span class="ml-2 font-bold"> Marketing </span>
+                </div>
+                <span class="pl-6 text-[#8A8E92]"> 2 vị trí đang tuyển </span>
+              </div>
+            </div>
+          </div>
+          <div class="office-block">
+            <div>
+              <img
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/khoi-van-hanh.png"
+                alt="khoi-van-phong"
+              />
+              <span class="font-bold text-[24px] my-4 inline-block">
+                KINH DOANH
+              </span>
+            </div>
+            <div>
+              <div class="department_block_detail">
+                <div class="flex items-center recruitment_text">
+                  <ion-icon
+                    class="text-[#FF0000] min-w-[20px] recruitment md hydrated"
+                    name="arrow-forward-outline"
+                    role="img"
+                    aria-label="arrow forward outline"
+                  ></ion-icon>
+                  <span class="ml-2 font-bold"> Kinh doanh </span>
+                </div>
+                <span class="pl-6 text-[#8A8E92]"> 4 vị trí đang tuyển </span>
+              </div>
+            </div>
+          </div>
+          <div class="office-block">
+            <div>
+              <img
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/khoi-buu-cuc.png"
+                alt="khoi-van-phong"
+              />
+              <span class="font-bold text-[24px] my-4 inline-block">
+                VẬN HÀNH
+              </span>
+            </div>
+            <div>
+              <div class="department_block_detail">
+                <div class="flex items-center recruitment_text">
+                  <ion-icon
+                    class="text-[#FF0000] min-w-[20px] recruitment md hydrated"
+                    name="arrow-forward-outline"
+                    role="img"
+                    aria-label="arrow forward outline"
+                  ></ion-icon>
+                  <span class="ml-2 font-bold"> Bưu cục </span>
+                </div>
+                <span class="pl-6 text-[#8A8E92]"> 2 vị trí đang tuyển </span>
+              </div>
+              <div class="department_block_detail">
+                <div class="flex items-center recruitment_text">
+                  <ion-icon
+                    class="text-[#FF0000] min-w-[20px] recruitment md hydrated"
+                    name="arrow-forward-outline"
+                    role="img"
+                    aria-label="arrow forward outline"
+                  ></ion-icon>
+                  <span class="ml-2 font-bold"> Vận hành </span>
+                </div>
+                <span class="pl-6 text-[#8A8E92]"> 3 vị trí đang tuyển </span>
+              </div>
+              <div class="department_block_detail">
+                <div class="flex items-center recruitment_text">
+                  <ion-icon
+                    class="text-[#FF0000] min-w-[20px] recruitment md hydrated"
+                    name="arrow-forward-outline"
+                    role="img"
+                    aria-label="arrow forward outline"
+                  ></ion-icon>
+                  <span class="ml-2 font-bold"> Quản lý chất lượng </span>
+                </div>
+                <span class="pl-6 text-[#8A8E92]"> 3 vị trí đang tuyển </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel_in_recruitment h-[350px] lg:h-[480px]">
+        <div class="carousel-item carousel-item-body carousel_item_active">
+          <img
+            src="https://jtexpress.vn/themes/jtexpress/assets/images/slider-tuyen-dung.png"
+            alt="J&amp;T Express Việt Nam - Chuyển phát tiêu chuẩn"
+          />
+          <div
+            class="carousel-custom-item-content flex items-center flex-col w-[80%] lg:w-1/2"
+          >
+            <div class="carousel-custom-item-content-img">
+              <img
+                src="https://jtexpress.vn/storage/app/uploads/public/628/356/5ce/6283565ce5e86304432966.jpg"
+                alt="J&amp;T Express Việt Nam - Chuyển phát tiêu chuẩn"
+              />
+            </div>
+            <div class="text-white text-center w-full">
+              <p
+                class="lg:carousel-custom-item-content-description text-center text-[14px] lg:text-[24px]"
+              >
+                "Công ty rất quan tâm đến đời sống nhân viên. Điển hình như đợt
+                dịch vừa rồi, Quỹ hỗ trợ J&T Care được lập ra đã giúp đỡ được
+                rất nhiều người"
+              </p>
+              <div class="my-4">
+                <span class="font-bold block">Lê Nguyễn Thùy Trang</span>
+                <span class="text-[14px]">Nhân viên bộ phận Mạng lưới</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-body">
+          <img
+            src="https://jtexpress.vn/themes/jtexpress/assets/images/slider-tuyen-dung.png"
+            alt="J&amp;T Express Việt Nam - Chuyển phát tiêu chuẩn"
+          />
+          <div
+            class="carousel-custom-item-content flex items-center flex-col w-[80%] lg:w-1/2"
+          >
+            <div class="carousel-custom-item-content-img">
+              <img
+                src="https://jtexpress.vn/storage/app/uploads/public/628/356/5ce/6283565ce5e86304432966.jpg"
+                alt="J&amp;T Express Việt Nam - Chuyển phát tiêu chuẩn"
+              />
+            </div>
+            <div class="text-white text-center w-full">
+              <p
+                class="lg:carousel-custom-item-content-description text-center text-[14px] lg:text-[24px]"
+              >
+                "Tại J&T Express, tôi luôn được trao quyền để bày tỏ quan điểm
+                cá nhân và sáng tạo. Công ty cũng cố gắng tạo điều kiện để nhân
+                viên câng bằng giữa cuộc sống cá nhân và công việc"
+              </p>
+              <div class="my-4">
+                <span class="font-bold block">Nguyễn Huỳnh Ngọc Trâm</span>
+                <span class="text-[14px]">Nhân viên bộ phận Marketing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dot-click dot-item-body">
+          <div class="dot_active"></div>
+          <div class=""></div>
+        </div>
+      </div>
+
+      <div class="container mx-auto mt-12 mb-12 lg:mb-16 px-4 lg:px-0">
+        <div
+          class="flex items-center justify-center lg:justify-between mb-4 lg:mb-10"
+        >
+          <div class="flex items-center">
+            <span class="text-[20px] lg:text-[32px] font-bold">Cuộc sống</span>
+            <img
+              class="ml-2"
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/logo.svg"
+              alt="J&amp;T Express Việt Nam - Tuyển dụng"
+            />
+          </div>
+          <a
+            class="hidden lg:flex items-center text-[#FF0000]"
+            href="./lifepage.html"
+          >
+            <ion-icon
+              name="chevron-forward-outline"
+              role="img"
+              class="md hydrated"
+              aria-label="chevron forward outline"
+            ></ion-icon>
+            <span class="text-[14px] uppercase font-bold"> Xem chi tiết </span>
+          </a>
+        </div>
+
+        <div class="carousel_jnt">
+          <div class="carousel_jnt_item carousel_jnt_item_1">
+            <img
+              class="w-full h-full object-cover rounded-[10px]"
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/c1.png"
+              alt="J&amp;T Express Việt Nam - Tuyển dụng"
+            />
+          </div>
+          <div class="carousel_jnt_item carousel_jnt_item_2">
+            <img
+              class="w-full h-full object-cover rounded-[10px]"
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/c2.png"
+              alt="J&amp;T Express Việt Nam - Tuyển dụng"
+            />
+          </div>
+          <div class="carousel_jnt_item carousel_jnt_item_3">
+            <img
+              class="w-full h-full object-cover rounded-[10px]"
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/c3.png"
+              alt="J&amp;T Express Việt Nam - Tuyển dụng"
+            />
+          </div>
+          <div class="carousel_jnt_item carousel_jnt_item_4">
+            <img
+              class="w-full h-full object-cover rounded-[10px]"
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/c4.png"
+              alt="J&amp;T Express Việt Nam - Tuyển dụng"
+            />
+          </div>
+          <div class="carousel_jnt_item carousel_jnt_item_5">
+            <img
+              class="w-full h-full object-cover rounded-[10px]"
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/c5.png"
+              alt="J&amp;T Express Việt Nam - Tuyển dụng"
+            />
+          </div>
+          <div class="carousel_jnt_item carousel_jnt_item_6">
+            <img
+              class="w-full h-full object-cover rounded-[10px]"
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/c6.png"
+              alt="J&amp;T Express Việt Nam - Tuyển dụng"
+            />
+          </div>
+        </div>
+        <a
+          class="lg:hidden flex justify-center items-center text-[#FF0000] mt-5"
+          href="./lifepage.html"
+        >
+          <ion-icon
+            name="chevron-forward-outline"
+            role="img"
+            class="md hydrated"
+            aria-label="chevron forward outline"
+          ></ion-icon>
+          <span class="text-[14px] uppercase Montserrat-Bold">
+            Xem chi tiết
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <footer id="layout-footer">
+      <footer class="bg-[#E0E3E7]">
+        <!-- main info -->
+        <div
+          class="container pt-[35px] mx-auto wrapper-footer gap-x-[70px] px-4 lg:px-0"
+        >
+          <div>
+            <img
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/logo.svg"
+              class="mb-4"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
+            />
+            <h5 class="font-bold mb-4">
+              CÔNG TY TNHH MỘT THÀNH VIÊN CHUYỂN PHÁT NHANH THUẬN PHONG
+            </h5>
+            <div class="text-[12px] block flex flex-col leading-[25px]">
+              <span>
+                Giấy CNĐKKD: 0313617136 - Ngày cấp: 13/01/2016, đăng ký thay đổi
+                lần 06 ngày 25/09/2018
+              </span>
+              <span
+                >Cơ Quan Cấp: Phòng Đăng ký kinh doanh - Sở kế hoạch và đầu tư
+                TP Hồ Chí Minh</span
+              >
+            </div>
+            <a href="http://online.gov.vn/Home/WebDetails/75041">
+              <img
+                class="mb-3 lg:mb-0"
+                src="https://jtexpress.vn/themes/jtexpress/assets/images/icon-bct.png"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              />
+            </a>
+          </div>
+
+          <div>
+            <h5 class="mb-1 font-bold">TRUY CẬP NHANH</h5>
+            <div class="fake-border mb-4"></div>
+            <div class="text-[12px] flex">
+              <div class="flex flex-col justify-around">
+                <span class="font-bold mb-[10px]">
+                  Trung tâm chăm sóc
+                  <br />
+                  khách hàng
+                </span>
+                <a class="mb-[15px]" href="#">Liên hệ với chúng tôi </a>
+                <span class="font-bold mb-[10px]"> Nhượng quyền </span>
+                <a class="mb-[10px]" href="#">Giới thiệu nhượng quyền </a>
+                <a class="mb-[15px]" href="#">Đăng ký nhượng quyền </a>
+                <span class="font-bold mb-[10px]"> Chính sách </span>
+                <a class="mb-[10px]" href="#">Chính sách khiếu nại</a>
+                <a href="#">Điều khoản chung</a>
+              </div>
+              <div class="flex flex-col ml-6">
+                <span class="font-bold mb-1"></span>
+                <a class="mb-[10px]" href="#">Câu chuyện thương hiệu</a>
+                <a class="mb-[10px]" href="#">Tầm nhìn và giá trị cốt lõi</a>
+                <a class="mb-[10px]" href="#">Lịch sử phát triển</a>
+                <a class="mb-[15px]" href="#">Mạng lưới và Quy mô</a>
+                <span class="font-bold mb-[10px]"> Blog </span>
+                <a class="mb-[10px]" href="#">Tin tức nổi bật</a>
+                <a class="mb-[10px]" href="#">Báo chí nói về chúng tôi</a>
+                <a href="#">J- Magazine</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="font-bold text-[16px] lg:mb-1 mt-[15px] lg:mt-0">
+              THÔNG TIN LIÊN HỆ
+            </h5>
+            <div class="fake-border mb-4"></div>
+            <div class="flex items-center mb-[11px]">
+              <ion-icon
+                name="mail-outline"
+                role="img"
+                class="md hydrated"
+                aria-label="mail outline"
+              ></ion-icon>
+              <span class="ml-2 text-[12px]">cskh@jtexpress.vn</span>
+            </div>
+            <div class="flex items-center mb-[11px]">
+              <ion-icon
+                name="call-outline"
+                role="img"
+                class="md hydrated"
+                aria-label="call outline"
+              ></ion-icon>
+              <span class="ml-2 text-[12px]">1900 1088</span>
+            </div>
+            <div class="flex items-start mb-[20px]">
+              <ion-icon
+                name="location-outline"
+                role="img"
+                class="w-[17px] h-[19px] flex-shrink-0 md hydrated"
+                aria-label="location outline"
+              ></ion-icon>
+              <span class="ml-2 text-[12px]"
+                >10 Mai Chí Thọ, P. Thủ Thiêm, Thành phố Thủ Đức, TP. HCM</span
+              >
+            </div>
+            <h5 class="font-bold text-[16px] mb-1">TẢI ỨNG DỤNG</h5>
+            <div class="fake-border mb-4"></div>
+            <div class="flex">
+              <img
+                src="https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl=https://jtexpress.vn/vi/download&choe=UTF-8"
+                title="Link to Download"
+                class="h-[80px] w-[80px]"
+                alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              />
+              <div class="ml-6">
+                <a href="#" target="_blank"
+                  ><img
+                    src="https://jtexpress.vn/storage/app/uploads/public/627/5ca/259/6275ca259876b348340439.png"
+                    alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                /></a>
+                <a href="#" target="_blank">
+                  <img
+                    src="https://jtexpress.vn/storage/app/uploads/public/627/5ca/bd7/6275cabd7222d202962202.png"
+                    alt="J&T Express - Giao hàng Chuyển phát nhanh"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fake-large-border w-[70%] lg:w-[700px] mx-auto"></div>
+        <!-- Social media -->
+        <div class="flex items-center justify-center pb-4">
+          <a href="#" target="_blank">
+            <img
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/facebook-h.png"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              class=""
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/instagram-h.png"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              class=""
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/titok-h.png"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              class=""
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/ytb-h.png"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              class=""
+            />
+          </a>
+
+          <a href="#" target="_blank">
+            <img
+              src="https://jtexpress.vn/themes/jtexpress/assets/images/zing-h.png"
+              alt="J&T Express - Giao hàng Chuyển phát nhanh"
+              class=""
+            />
+          </a>
+        </div>
+        <!-- Copyright -->
+        <div
+          class="flex items-center justify-center text-[12px] lg:text-[14px] flex-col lg:flex-row pb-6"
+        >
+          <a href="#" target="_blank" class="pb-4 lg:pb-0"
+            >Chính sách bảo mật</a
+          >
+          <span class="mx-1 hidden lg:block">|</span>
+          <span>Copyright © 2022 J&T Express. All rights reserved.</span>
+        </div>
+      </footer>
+    </footer>
+
+    <!-- JS -->
+    <script src="../js/homepage.js"></script>
+
+    <!-- Module -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Jquery -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- Slider slick -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".my-slider").slick({
+          slideToShow: 1,
+          slideToScroll: 1,
+          fade: true,
+          cssEase: "linear",
+          autoplay: true,
+          autoplaySpeed: 2000,
+          speed: 500,
+          dots: true,
+          arrows: false,
+        });
+      });
+
+      $(".autoplay").slick({
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000,
+        autoplay: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              autoplay: true,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+            },
+          },
+        ],
+      });
+
+      $(".my-partners-slick").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+        ],
+      });
+
+      var toTop = $(".to-top");
+      let global = $("#layout-header").offset().top;
+
+      toTop.on("click", function () {
+        $("html, body").animate(
+          {
+            scrollTop: $("html, body").offset().top,
+          },
+          "5000"
+        );
+      });
+
+      toTop.hide();
+      $(document).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+          toTop.show();
+        } else {
+          toTop.hide();
+        }
+      });
+    </script>
+
+    <script>
+      let navShadow = document.querySelector(".n4msama-nav");
+      $(document).scroll(function () {
+        if ($(this).scrollTop() > 97) {
+          navShadow.classList.add("shadow-lg");
+        } else {
+          navShadow.classList.remove("shadow-lg");
+        }
+      });
+    </script>
+
+    <script>
+      (() => {
+        let defaultCarouselIndex = 0;
+        let carousels = document.querySelectorAll(".carousel-item-body");
+        let dots = document.querySelectorAll(".dot-item-body > div");
+        dots.forEach((item, index) => {
+          item.addEventListener("click", () => {
+            defaultCarouselIndex = index;
+            carousels.forEach((carousel) => {
+              carousel.classList.remove("carousel_item_active");
+            });
+            dots.forEach((dot) => {
+              dot.classList.remove("dot_active");
+            });
+            carousels[defaultCarouselIndex].classList.add(
+              "carousel_item_active"
+            );
+            dots[defaultCarouselIndex].classList.add("dot_active");
+          });
+        });
+
+        dots[defaultCarouselIndex].classList.add("dot_active");
+        carousels[defaultCarouselIndex].classList.add("carousel_item_active");
+      })();
+    </script>
+
+    <!-- Select 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>
